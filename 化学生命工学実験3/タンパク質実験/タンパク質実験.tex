@@ -1,0 +1,166 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+
+\title{タンパク質実験}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+\flushleft{
+    \huge{令和5年度 化学生命工学実験3}
+    
+    \vspace{100pt}
+    
+    \huge{タンパク質実験}
+}
+
+\vfill
+\begin{flushright}
+
+        \Large{\underline{学籍番号 : 082110424}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{氏名 : 中村優作}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{実施日 : 10月4日}}
+        
+\end{flushright}
+
+\newpage
+
+\section{目的}
+\section{操作}
+
+\subsection{アフィニティクロマトグラフィによるsfGFP-Hの精製}
+
+\quad 電気泳動用に、大腸菌破砕液$100\mathrm{\mu L}$を分注した。アフィニティクロマトグラフィ担体が詰められたカラム(Bio-Scale Mini Profinity IMACカートリッジ)に、表\ref{table:sfGFP-Hの精製手順}のように順次溶液を打ち込んだ。
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{sfGFP-Hの精製手順}
+    \begin{tabular}{|l|l|c|c|}
+        \hline
+        ステップ & 使用buffer & 分取量($\mathrm{mL}$) & 使用チューブ($\mathrm{mL}$) \\
+        \hline
+        1. カラム平衡化 & IMAC B1 buffer & 8 & 15 \\
+        2. タンパク質結合 & 大腸菌破砕液 & 2 & 15 \\
+        3. カラム洗浄 & IMAC B2 buffer &  20 & 50 \\
+        4. タンパク質溶出 & IMAC B3 buffer & 0.5 $\times$ 8本 & 15 \\
+        \hline
+    \end{tabular}
+    \label{table:sfGFP-Hの精製手順}
+\end{table}
+
+\quad 打ち込む際は、プランジャを抜いたシリンジをカラムに装着し、シリンジ内に溶液をピペットで加え、プランジャを押し込むことで溶液をカラムに流し込んだ。また、カラムに溶液を流し込む速度は、1秒に2滴程度となるように調節した。また、打ち込む溶液を交換する際は、カラムからシリンジを外してからプランジャを抜いた。
+
+\subsection{紫外・可視分光法によるタンパク質の濃度決定}
+
+\subsubsection{測定に用いるタンパク質の調整}
+
+\quad タンパク質溶出によって分取した8本のチューブのうち、目視で最も濃いと判断した2番目に溶出したチューブを溶出液として取り扱った。$1.5\mathrm{mL}$チューブに、溶出液$100\mathrm{\mu L}$を取り、$900\mathrm{\mu L}$のIMAC B3 bufferを加えることで、1/10倍に希釈した。
+
+\subsubsection{分光光度計による吸光度の測定}
+
+\quad 1/10倍に希釈した溶出液を、キュベットに移動し、分光光度計にかけて吸光度を測定した。測定波長は、$280\mathrm{nm}$と$488\mathrm{nm}$とした。$488\mathrm{nm}$で測定した際、吸光度が2を超え、定量的信頼性が下がると判断して、溶液を1/20倍希釈になるように調整した。1/20倍に希釈した溶液を、キュベットに移動し、分光光度計にかけて吸光度を測定した。
+
+\subsection{ブラッドフォード法によるタンパク質の定量}
+
+\quad タンパク質の標準サンプルとして、$8\mathrm{mg/mL}$のBSA溶液$20\mathrm{\mu L}$を用意した。このBSA溶液をIMAC B3 bufferを用いて系列希釈し、$0.8\mathrm{mg/mL}$, $0.4\mathrm{mg/mL}$, $0.2\mathrm{mg/mL}$, $0.1\mathrm{mg/mL}$, $0.05\mathrm{mg/mL}$の溶液各$50\mathrm{\mu L}$を$1.5\mathrm{mL}$チューブに調整した。
+
+\quad また、溶出液$1\mathrm{\mu L}$に$49\mathrm{\mu L}$のIMAC B3 bufferを加えた、1/50x溶出液と、コントロール用の$50\mathrm{\mu L}$B3 bufferを$1.5\mathrm{mL}$チューブに調整した。
+
+\subsubsection{ブラッドフォード溶液の混合}
+
+\quad $1.5\mathrm{mL}$チューブ内で、$50\mathrm{\mu L}$のサンプルに$200\mathrm{\mu L}$のブラッドフォード試薬を加え、一旦混合した。その後、$750\mathrm{\mu l}$の超純水を添加した。この時、赤色から青色に溶液の色が変化した。
+
+\subsubsection{分光光度計による吸光度の測定}
+
+\quad 調整したブラッドフォード溶液の全量($1000\mathrm{\mu L}$)を用いて、吸光度の測定を$595\mathrm{nm}$で分光光度計を用いて行った。
+
+\subsection{SDS ポリアクリルアミドゲル電気泳動によるsfGFP-Hの解析}
+
+\subsubsection{泳動サンプルの調整}
+
+\quad ゲルはATTO社のE-T 12.5L ePAGEL $12.5\%$
+
+\section{結果}
+
+\subsection{紫外・可視分光法によるタンパク質の濃度決定}
+
+\quad 1/20倍に希釈した溶液の吸光度を、$280\mathrm{nm}$と$488\mathrm{nm}$で測定した。吸光度の測定結果を表\ref{table:タンパク質溶出液の吸光度の測定結果}に示す。
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{タンパク質溶出液の吸光度の測定結果}
+    \begin{tabular}{|c|c|}
+        \hline
+        測定波長 $\mathrm{nm}$ & 吸光度 \\
+        \hline
+        280 & 0.467 \\
+        488 & 1.134 \\
+        \hline
+    \end{tabular}
+    \label{table:タンパク質溶出液の吸光度の測定結果}
+\end{table}
+
+\subsection{ブラッドフォード溶液の、分光光度計による吸光度の測定}
+
+\quad 調整したブラッドフォード溶液を用いて、吸光度の測定を$595\mathrm{nm}$で分光光度計を用いて行った結果を表\ref{table:ブラッドフォード溶液の吸光度の測定結果}に示す。
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{ブラッドフォード溶液の吸光度の測定結果}
+    \begin{tabular}{|c|c|}
+        \hline
+        ブラッドフォード溶液 & 吸光度 \\
+        \hline
+        $0.8\mathrm{mg/mL}$ & 2.063 \\
+        $0.4\mathrm{mg/mL}$ & 1.046 \\
+        $0.2\mathrm{mg/mL}$ & 0.994 \\
+        $0.1\mathrm{mg/mL}$ & 0.932 \\
+        $0.05\mathrm{mg/mL}$ & 0.874 \\
+        B3 buffer & 0.828 \\
+        1/50x溶出液 & 1.151 \\
+        \hline
+    \end{tabular}
+    \label{table:ブラッドフォード溶液の吸光度の測定結果}
+\end{table}
+
+\section{考察}
+\section{設問/課題}
+
+\subsection{sfGFPの$280\mathrm{nm}$におけるmol吸光係数$\epsilon_{280}$の計算}
+
+\quad ExPasyのTranslateに与えられたsfGFPのアミノ酸配列を用いて、5'3'Frame1のアミノ酸配列を算出した。その後、ProtParamを用いて分子量と理論上のmol吸光係数を求めたところ、分子量は$2.8180 \mathrm{g/mol}$、理論上のmol吸光係数は$18910 \mathrm{M^{-1}cm^{-1}}$となった。
+
+\subsection{吸光度を用いたsfGFP濃度の計算}
+
+\quad 5.1で計算したmol吸光係数と、実測した$280\mathrm{nm}$における吸光度$A_{280}$の値を用いて、Lambert-Beerの式から、sfGFPの濃度を計算したところ以下のようになった。
+\begin{equation}
+    c = \frac{0.467}{18910 \mathrm{M^{-1}cm^{-1}}} = 2.47 \mathrm{\mu M}
+\end{equation}
+
+\section{参考文献}
+\begin{thebibliography}{99}
+    \bibitem{1} 中村優作 1991
+\end{thebibliography}
+
+
+
+
+\end{document} 
