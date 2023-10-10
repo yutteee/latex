@@ -38,6 +38,8 @@
 \newpage
 
 \section{目的}
+
+% 操作-----------------------------------------------------------------------------
 \section{操作}
 
 \subsection{アフィニティクロマトグラフィによるsfGFP-Hの精製}
@@ -92,8 +94,38 @@
 
 \subsubsection{泳動サンプルの調整}
 
-\quad ゲルはATTO社のE-T 12.5L ePAGEL $12.5\%$
+\quad 表\ref{table:泳動サンプルの調整}のように、サンプルに1x SDS-PAGE用loading bufferを添加し、混合した後、$95\mathrm{\circ C}$で2分間加熱して用意した。
 
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{泳動サンプルの調整}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        & サンプル & 1x SDS-PAGE用loading buffer \\
+        \hline
+        精製前 & $5\mathrm{\mu L}$ & $45\mathrm{\mu L}$ \\
+        カラムの通過液 & $5\mathrm{\mu L}$ & $45\mathrm{\mu L}$ \\
+        タンパク質溶出液(1/40) & $2\mathrm{\mu L}$ & $78\mathrm{\mu L}$ \\
+        タンパク質溶出液(1/200) & $5\mathrm{\mu L}$タンパク質溶出液(1/40) & $20\mathrm{\mu L}$ \\
+        \hline
+    \end{tabular}
+    \label{table:泳動サンプルの調整}
+\end{table}
+
+\subsubsection{SDS-PAGEの実施}
+
+\quad ゲルを泳動槽にセットし、SDS-PAGE用泳動bufferを添加した。ゲルはATTO社のE-T 12.5L ePAGEL $12.5\%$を使用した。調整したサンプルをそれぞれ$4\mathrm{\mu L}$ずつ、ウェルに打ち込んだ。その後、ゲル1枚あたり$40\mathrm{mA}$の条件で40分程度通電した。
+
+\subsubsection{ゲルの染色と観察}
+
+\quad ゲルを取り出し、染色用の容器に移した。あらかじめ温めておいた超純水を容器の半分程度に加えて、電子レンジで数秒間沸騰させた後、室温で5分静置した。超純水を交換し、同様の操作を計3回繰り返した。完全に水を切って、CBB染色液$10\mathrm{mL}$を加え、電子レンジで加熱し、沸騰するのが見えたら直ちに止め、室温で20分程度静置してバンドが染まったことを確認したら染色液を捨てた。超純水を半分程度加え、電子レンジで沸騰させた後、室温で5分静置した。超純水を交換し、同様の操作を計2回繰り返した。水を捨てた後、ゲルを撮影装置で撮影した。
+
+\subsubsection{sfGFPの濃度決定}
+
+
+% 結果--------------------------------------------------------------------------------------------------
 \section{結果}
 
 \subsection{紫外・可視分光法によるタンパク質の濃度決定}
@@ -141,6 +173,87 @@
     \label{table:ブラッドフォード溶液の吸光度の測定結果}
 \end{table}
 
+% TODO:検量線の作成
+
+\subsection{sfGFPの濃度決定} 
+
+\quad 図\ref{fig:SDS-PAGEの結果}に、染色されたゲルの結果を示す。
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=10cm]{result.png}
+    \caption{SDS-PAGEの結果}
+    \label{fig:SDS-PAGEの結果}
+\end{figure}
+
+\quad ImageJを用いて、標準用BSAのバンド4本と、1/40xタンパク質溶出液のバンド(図\ref{fig:SDS-PAGEの結果}の左から7番目)について、バンドの強度を定量した。その結果を表\ref{table:SDS-PAGEの結果}に示す。また、結果から作成した検量線を図\ref{fig:バンド強度とBSA濃度の関係}に示す。
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{SDS-PAGEの結果}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        バンド & 強度 & 濃度($\mathrm{mg/mL}$) \\
+        \hline
+        BSA(1) & 2.976 & 0.25\\
+        BSA(2) & 2.457 & 0.125 \\
+        BSA(3) & 1.659 & 0.0625 \\
+        BSA(4) & 1.038 & 0.03125 \\
+        1/40x溶出液 & 3.137 &  \\
+        \hline
+    \end{tabular}
+    \label{table:SDS-PAGEの結果}
+\end{table}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=10cm]{濃度検量線.png}
+    \caption{バンド強度とBSA濃度の関係}
+    \label{fig:バンド強度とBSA濃度の関係}
+\end{figure}
+
+作成した検量線から、1/40x溶出液のsfGFP濃度を求めたところ、$0.2813\mathrm{mg/mL}$であった。
+
+\subsection{sfGFP-Hの分子量の決定}
+
+\quad ImageJを用いて、BFPの泳動距離を測定し、各タンパク質のバンドの相対泳動度(Rf値)を測定した。各タンパク質の分子量とRf値を表\ref{table:各タンパク質の分子量とRf値}に示す。また、結果から作成した検量線を図\ref{fig:分子量とRf値の関係}に示す。
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{各タンパク質の分子量とRf値}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        分子量($\mathrm{kDa}$) & Rf値 \\
+        \hline
+        200 & 0.160361567 \\
+        150 & 0.207231336 \\
+        100 & 0.266488115 \\
+        75 & 0.328757951 \\
+        50 & 0.438901908 \\
+        37 & 0.541680616 \\
+        25 & 0.728824908 \\
+        20 & 0.7941078 \\
+        \hline
+    \end{tabular}
+    \label{table:各タンパク質の分子量とRf値}
+\end{table}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=10cm]{分子量検量線.png}
+    \caption{分子量とRf値の関係}
+    \label{fig:分子量とRf値の関係}
+\end{figure}
+
+作成した検量線から、1/40xタンパク質溶出液、1/200xタンパク質溶出液の分子量はそれぞれ$24.8\mathrm{kDa}$, $25.5\mathrm{kDa}$であった。
+
+
+
+% 考察---------------------------------------------------------------------------------
+
 \section{考察}
 \section{設問/課題}
 
@@ -152,12 +265,32 @@
 
 \quad 5.1で計算したmol吸光係数と、実測した$280\mathrm{nm}$における吸光度$A_{280}$の値を用いて、Lambert-Beerの式から、sfGFPの濃度を計算したところ以下のようになった。
 \begin{equation}
-    c = \frac{0.467}{18910 \mathrm{M^{-1}cm^{-1}}} = 2.47 \mathrm{\mu M}
+    c_{20倍希釈} = \frac{0.467}{18910 \mathrm{M^{-1}cm^{-1}}} = 2.47 \mathrm{\mu M}
 \end{equation}
 
+これは20倍希釈したsfGFP溶液の濃度であるため、溶出液のsfGFP濃度は$49.4 \mathrm{\mu M}$となる。
+
+\subsection{His-tag以外の精製用ペプチドtagとタンパク質tagの例}
+
+\subsubsection{C-tag}
+
+\quad C末端にのみ付加できるタグで、EPEAのアミノ酸配列を持つ。高濃度のSEPEAペプチドによる競合溶出法、または塩濃度が高く（例：2M MgCl2）かつ酸性条件の溶液で、タンパク質を変性させずに溶出する。\cite{1}
+
+\subsubsection{GST-tag}
+
+\quad 分子量は約26kDaで、211アミノ酸残機を持つタンパク質である。発現量が多く、細胞の制御機構に関与するタンパク質である。抗GST VHH抗体（Nanobody®）またはグルタチオンと強固に結合し、樹脂担体への残存は少ない傾向にある。還元型グルタチオンを用いて溶出する。GSTタグによってタンパク質の溶解性が向上し、可溶性タグ融合タンパク質の発現量が増加する。GSTタグは多量体からなるタンパク質複合体の精製には適していない。タグの分子量が大きいため、目的タンパク質の機能に干渉する可能性がある。したがって、精製ステップの後にタグを除去する場合がある。\cite{1}
+
+\subsection{本実験操作以外のタンパク質濃度測定法}
+
+\quad 
+
+\subsection{$488\mathrm{nm}$におけるmol吸光係数}
+
+\subsection{SDS-PAGEの移動度から計算した分子量と理論上の分子量の不一致の原因}
 \section{参考文献}
 \begin{thebibliography}{99}
-    \bibitem{1} 中村優作 1991
+    \bibitem{1} タンパク質精製用タグ, 株式会社プロテインテックジャパン, https://www.ptglab.co.jp/news/blog/tags-for-protein-purification/
+    \bibitem{2} 総タンパク質の定量法, 鈴木 祥夫, https://www.jsac.or.jp/bunseki/pdf/bunseki2018/201801nyuumon.pdf
 \end{thebibliography}
 
 
