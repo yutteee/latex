@@ -1,0 +1,83 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage[margin=40truemm]{geometry}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+\flushleft{
+    \huge{令和5年度 化学生命工学実験3}
+    
+    \vspace{100pt}
+    
+    \huge{実験名}
+}
+
+\vfill
+\begin{flushright}
+
+        \Large{\underline{学籍番号 : 082110424}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{氏名 : 中村優作}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{実施日 : }}
+        
+\end{flushright}
+
+\newpage
+
+\section{目的}
+\section{操作}
+
+\subsection{PCR}
+
+\quad PCR酵素$15\mathrm{\mu L}$が入ったマイクロチューブに超純水$3\mathrm{\mu L}$とtemplate$6\mathrm{\mu L}$とprimer$6\mathrm{\mu L}$を加えて調整した。調整した溶液を装置にセットし、以下の図\ref{fig:pcr}プログラムでPCRを行った。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=12cm]{./data/pcr.png}
+    \caption{PCRプログラム}
+    \label{fig:pcr}
+\end{figure}
+
+% TODO:原理
+
+\subsection{電気泳動}
+
+\quad 6x loading buffer入りのエッペンチューブにPCR後の溶液を$10\mathrm{\mu L}$加えた。その後$100\mathrm{V}$で20分間電気泳動をした。その後、電気泳動で確認できたバンドを切り出してカラムでDNAを観察した。ゲル精製したEGFPと$GABA_{B1}$をコードするDNA断片とベクターとなるpBlueScriptを制限酵素で切断した。
+
+\subsection{ligation}
+
+\quad エッペンチューブ2本に制限酵素処理をしたpBluescript(vector)を$2.5\mathrm{\mu L}$ずつ加え、続いて片方にEGFPをコードするDNA断片(insert)、もう片方に$GABA_{B1}$をコードするDNA断片(insert)を$2.5\mathrm{\mu L}$加えた。酵素と緩衝液であるligation mixを$5\mathrm{\mu L}$加えて、$16\mathrm{℃}$で30分反応させた。$2\mathrm{\mu L}$の6x loading bufferが入ったエッペンチューブにligation前のペリレン、EGFP, GABAを各$3\mathrm{\mu L}$ずつ加えた。また、$1\mathrm{\mu L}$の6x loading bufferが入ったエッペンチューブ2本にそれぞれペリレンとEGFP$4\mathrm{\mu L}$ずつ、ペリレンとGABA$4\mathrm{\mu L}$ずつ加えた。これらの溶液を$16\mathrm{^{\circ}C}$で30分反応させた。その後、30分間$100\mathrm{V}$で電気泳動をした。
+
+\subsection{transformation}
+
+\quad 2.3で調整したペリレンとEGFPの溶液、ペリレンとGABAの溶液を$5\mathrm{\mu L}$とり、新しいチューブ内でコンピテントセル$30\mathrm{\mu L}$とそれぞれの溶液を混合した。タッピング後、氷上で5分間静置して、コンピテントセルを$42\mathrm{^{\circ}C}$で45分間加熱した。その後5分間静置してLBプレートへ菌を撒いた。LBプレートに生えたコロニーを1個突き、液体培地$2\mathrm{mL}$に加えた。
+
+\subsection{ミニプレップ}
+
+\quad エッペンチューブに菌体を移し、$4000\mathrm{rpm}$で1分間遠心した。上澄みを除去して、
+
+
+\section{結果}
+\section{考察}
+\section{設問/課題}
+\section{参考文献}
+\begin{thebibliography}{99}
+    % \bibitem{1} hogehoge \url{https://www.google.com/}
+\end{thebibliography}
+
+\end{document} 

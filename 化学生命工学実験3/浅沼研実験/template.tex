@@ -5,7 +5,7 @@
 \usepackage{enumerate}
 \usepackage[version=4]{mhchem}
 \usepackage{caption}
-\usepackage[margin=40truemm]{geometry}
+\usepackage{url}
 
 \title{実験レポテンプレ}
 \author{中村 優作}
@@ -45,11 +45,175 @@
 
 % 結果-----------------------------------------------------------------------------
 \section{結果}
+
+\subsection{蛍光観察}
+
+\quad 観察用溶液$300\mathrm{\mu L}$を以下の3種類調整した。
+
+\begin{enumerate}[組成(1)]
+    \item 合成DNA$5.0\mathrm{\mu M}$,標的DNA-A$5.0\mathrm{\mu L}$, $10\mathrm{mM}$リン酸バッファーの水溶液$300\mathrm{\mu L}$
+    \item 合成DNA$5.0\mathrm{\mu M}$,標的DNA-B$5.0\mathrm{\mu L}$, $10\mathrm{mM}$リン酸バッファーの水溶液$300\mathrm{\mu L}$
+    \item 合成DNA$5.0\mathrm{\mu M}$,$10\mathrm{mM}$リン酸バッファーの水溶液$300\mathrm{\mu L}$
+\end{enumerate}
+
+以下に示す色調を観察した画像では、左から順に組成(1), (2), (3)の観察用溶液である。
+
+\subsubsection{室内光下での蛍光観察}
+
+これらの観察用溶液の室内光下での色調を観察したところ図\ref{fig:room}のようにそれぞれ透明であった。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/room.png}
+    \caption{観察用溶液の室内光下での色調}
+    \label{fig:room}
+\end{figure}
+
+\subsubsection{UV照射下での蛍光観察}
+
+UV照射下での色調を観察したところ図\ref{fig:uv}のように、組成(1), (3)は青色に発光し、組成(2)では黄色に発光した。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/uv.png}
+    \caption{観察用溶液のUV照射下での色調}
+    \label{fig:uv}
+\end{figure}
+
+\subsubsection{高温下での蛍光観察}
+
+サンプルを$80\mathrm{^{\circ}C}$に温めた状態でUV照射下における色調を観察したところ、図\ref{fig:hot}のように全て青色に発光した。
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/uv_hot.png}
+    \caption{観察用溶液の高温下での色調}
+    \label{fig:hot}
+\end{figure}
+
+\subsubsection{蛍光スペクトル}
+
+\quad ペリレン単体の吸収スペクトルの測定結果を図\ref{fig:periren}、$20\mathrm{^{\circ}C}$と$80\mathrm{^{\circ}C}$での観察用溶液の吸収スペクトルを図\ref{fig:spectrum}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/periren.png}
+    \caption{ペリレン単体の吸収スペクトル}
+    \label{fig:periren}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=12cm]{./data/spectrum.png}
+    \caption{$20\mathrm{^{\circ}C}$と$80\mathrm{^{\circ}C}$における観察用溶液の吸収スペクトル}
+    \label{fig:spectrum}
+\end{figure}
+
+\subsubsection{塩酸条件下での蛍光観察}
+
+\quad 塩酸条件下での色調を観察したところ図\ref{fig:acid}のように、全ての組成で発光が消え、透明になった。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/uv_hcl.png}
+    \caption{塩酸条件下での色調}
+    \label{fig:acid}
+\end{figure}
+
+\subsection{PAGE解析}
+
+\quad PAGE解析の結果を図\ref{fig:page}に示す。組成(3)が一番長い距離を泳動し、組成(1),(2)がほぼ同じ距離を泳動した。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/page.png}
+    \caption{PAGE解析の結果}
+    \label{fig:page}
+\end{figure}
+
+% 考察-----------------------------------------------------------------------------
+
 \section{考察}
+
+\subsection{蛍光観察}
+
+\subsubsection{UV照射下での蛍光観察に関して}
+
+\quad 組成(1)、(3)が青色に光り、組成(2)が黄色に発光した。これらの発光は蛍光色素のペリレンによるものと考えられる。ペリレンは青色の蛍光発光を示し、ペリレン同士が接近するとexcimerと呼ばれる複合体を形成して緑色の蛍光波長を発光する。したがって、組成(2)に含まれるDNA-Bが1塩基欠損配列を含むDNAで、ペリレン同士の接触が起こって青色に発光しなかったと考えられる。同様に、組成(1)に含まれるDNA-Aは塩基欠損配列を含まないDNAで、ペリレン同士の接触が起こらず青色に発光したと考えられる。また、組成(3)に含まれるDNAは合成DNAのみであるため、塩基欠損配列を含まない。したがって、ペリレン同士の接触が起こらず青色に発光したと考えられる。
+
+% TODO:なぜ緑色ではなく黄色？
+
+\subsubsection{高温下での蛍光観察に関して}
+
+\quad 組成(1)、(2)、(3)が全て青色に発光した。これは、高温下では二重鎖の水素結合が切断されて2本の一重鎖になる\cite{1}ため、ペリレン同士の接触がなくなったためと考えられる。
+
+\subsubsection{蛍光スペクトルに関して}
+
+\quad ペリレン単体での吸収スペクトルに対して、観察用溶液の吸収スペクトルでは吸収スペクトルが長波長側にシフトしていることがわかる。これは、観察用溶液ではペリレンに塩基が結合しており、ペリレンの極性が大きくなったことによるものと考えられる。基底状態では励起状態よりも双極子モーメントが小さいため、溶媒の配向性が小さい。励起直後の状態でもその配向性は維持されており、この状態の寿命は十分に長く、溶媒が双極子モーメントの増大した励起状態の分子の周囲で緩和されてより安定な状態となる。Frank-Condonの原理に従って緩和されることで、基底状態へと戻るため、分子の双極子モーメントと溶媒の配向が合わず不安定化される。その結果として、励起波長に比べて蛍光波長のエネルギーが小さくなるため、長波長化する。\cite{2}極性が高くなることによってこの効果が大きくなるため、長波長化したと考えられる。
+
+\quad また、$20\mathrm{^{\circ}C}$と$80\mathrm{^{\circ}C}$での観察用溶液の吸収スペクトルを比較すると、$80\mathrm{^{\circ}C}$では蛍光が弱くなっている。結果の画像からも、光の度合いが弱くなっていることがわかる。蛍光強度は一般に温度によって影響を受け、蛍光は温度上昇と共に減少する。これは、蛍光物質は温度の上昇とともに溶媒の運動、衝突によって熱的に失活するためである。\cite{3}
+
+% TODO：サンプル1に比べてサンプル3が弱い理由
+
+\subsubsection{塩酸条件下での蛍光観察に関して}
+
+\quad 組成(1), (2), (3)の全てで発光が消えた。
+
+% TODO：なぜ蛍光が消えたか？
+
+\subsection{PAGE解析に関して}
+
+\quad PAGE解析の結果、組成(3)が一番長い距離を泳動した。これは、組成(3)に含まれるDNAは合成DNAのみであるため、分子量が組成(1), (2)に比べて小さいためと考えられる。
+
+\quad また、組成(1), (2)では分子量がほとんど同じであり、泳動距離もほぼ同じになると予想されたが、組成(2)の方が泳動距離が長かった。これはゲル板を作成した際の洗浄が不十分であったため、ゲル板にゴミが付着して組成(1)の泳動が妨げられたからだと考えられる。
+
 \section{設問/課題}
-\section{参考文献}
+
+\subsection{伸長反応の副反応}
+
+\quad 脱水条件でない場合、\ce{H2O}の酸素原子の孤立電子対が活性化モノマー中のリンに対して求核攻撃をするため、図\ref{fig:伸長反応}のような副反応が起こると考えられる。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=15cm]{./data/work1.jpeg}
+    \caption{伸長反応の副反応}
+    \label{fig:伸長反応}
+\end{figure}
+
+\subsection{ピレンの導入}
+
+\quad 2-シアノエチルピレニルN,N-ジイソプロピルホスホルアミダイト(図\ref{fig:ピレン})をアミダイトモノマーとして用いることで、ピレンを導入することができる。\cite{4}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=5cm]{./data/mono.png}
+    \caption{2-シアノエチルピレニルN,N-ジイソプロピルホスホルアミダイト}
+    \label{fig:ピレン}
+\end{figure}
+
+\subsection{Molecular Beacon}
+% 蛍光性核酸検出プローブとして Molecular Beacon が広く利用されている。このプローブの検出原理を簡単に説明し、本実験で用いたプローブと比べた利点と欠点を述べよ。
+
+\quad Molecular Beaconは、ハイブリッド形成していない場合は両末端の色素近傍に分子内相補配列を持つため、ヘアピン構造をとっている。ヘアピン部にはターゲットに相補的な配列を有している。この状態で色素同士は近傍に配されており、蛍光は強く消光されている。ターゲットが増幅されてくると、ターゲットとハイブリッドを形成してヘアピン構造から直鎖状になるため、色素同士が著しく話されて消光が解消されて蛍光発光する。\cite{5}
+
+\quad モレキュラービーコンの利点として、消光機構が内在している、任意の蛍光色素が使用できる、高い汎用性を持つことが挙げられる。欠点として、色素が末端に導入される点があり\cite{6}、本実験での欠損の検出を行う場合には不適切であると考えられる。
+
+\subsection{NaClとリン酸バッファーの役割}
+
+\quad NaClは溶液中で電離し、\ce{Na+}として働く。カチオンはDNAのリン酸基と結合することで、リン酸の負電荷を中和することでDNA二重鎖の安定性を高める。また、核酸に結合したカチオンは近傍にある官能基の分極を促すことでそのp$K_a$を低下させたり、核酸塩基の互変異性体構造を安定化させて核酸の相互作用を変化させることができる。\cite{7}
+
+\quad また、リン酸バッファーは緩衝作用によりpHを一定に保つために用いられる\cite{8}。DNAの塩基はp$K_a$が異なるため、pHによってはプロトン化しているかどうかが変化する。このため、pHを一定に保つことで塩基のプロトン化状態を一定に保つことができる。
+
 \begin{thebibliography}{99}
-    \bibitem{1} 中村優作 1991
+    \bibitem{1} DNAの熱変性, 寺本英, 田中正寛, 尾崎正明, 川合葉子, \url{https://www.jstage.jst.go.jp/article/biophys1961/3/4/3_4_213/_pdf/-char/ja}
+    \bibitem{2} 蛍光分光法, 公益社団法人高分子学会, 蛭田勇樹, \url{https://www.spsj.or.jp/equipment/news/news_detail_34.html}
+    \bibitem{3} 分光蛍光光度計の基礎, Jasco日本分光, \url{https://www.jasco.co.jp/jpn/technique/internet-seminar/fp/fp5.html}
+    \bibitem{4} Immobilization and Stretching of 50-Pyrene-Terminated DNAon Carbon Film Deposited on Electron Microscope Grid, \url{https://www.researchgate.net/publication/281264834_Immobilization_and_Stretching_of_5_0_-Pyrene-Terminated_DNA_on_Carbon_Film_Deposited_on_Electron_Microscope_Grid}
+    \bibitem{5} DNA増幅系に用いる蛍光プローブの開発, 江坂幸宏, \url{https://www.jsac.or.jp/bunseki/pdf/wadai200203.pdf}
+    \bibitem{6} 核酸シャペロン材料を利用した高感度分子ビーコンシステム, 丸山厚, \url{https://shingi.jst.go.jp/pdf/2011/jst111025_07.pdf}
+    \bibitem{7} 核酸の四重鎖構造およびその構造を安定化する分子による転写および翻訳の制御, 杉本直己, \url{https://www.jstage.jst.go.jp/article/bjscc/65/0/65_23/_pdf}
+    \bibitem{8} 遺伝子工学用バッファー, 富士フィルム, \url{https://labchem-wako.fujifilm.com/jp/category/lifescience/genetics_dna/buffer_l1/index.html}
 \end{thebibliography}
 
 \end{document} 
