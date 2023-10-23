@@ -5,7 +5,6 @@
 \usepackage{enumerate}
 \usepackage[version=4]{mhchem}
 \usepackage{caption}
-\usepackage[margin=40truemm]{geometry}
 \usepackage{url}
 
 \title{実験レポテンプレ}
@@ -19,7 +18,7 @@
     
     \vspace{100pt}
     
-    \huge{実験名}
+    \huge{遺伝子組み換え実験}
 }
 
 \vfill
@@ -33,7 +32,7 @@
 
         \vspace{30pt}
     
-        \Large{\underline{実施日 : }}
+        \Large{\underline{実施日 : 10/18, 19}}
         
 \end{flushright}
 
@@ -69,15 +68,134 @@
 
 \subsection{ミニプレップ}
 
-\quad エッペンチューブに菌体を移し、$4000\mathrm{rpm}$で1分間遠心した。上澄みを除去して、
+\quad エッペンチューブに菌体を移し、$4000\mathrm{rpm}$で1分間遠心した。上澄みを除去して、Solution1($50\mathrm{\mu M}$ グルコース, $20\mathrm{mM}$ Tris-\ce{HCl}(pH8.0), $10\mathrm{mM}$ EDTA)を$100\mathrm{mL}$加えてボルテックスを行った。次に、Solution2($0.2\mathrm{M}$ \ce{NaOH}, 1\% SDS)を$200\mathrm{\mu L}$加えて転倒攪拌した。Solution3($2\mathrm{M}$ 酢酸, $3\mathrm{M}$酢酸カリウム)を$150\mathrm{\mu L}$を加えて転倒攪拌した。この溶液を5分間$1200\mathrm{rpm}$で遠心した。その後、新しいチューブに上澄みを移し、イソプロパノールを$400\mathrm{\mu L}$加えてボルテックスした。再び5分間$1200\mathrm{rpm}$で遠心した。溶液の上澄みを除去し、70\%エタノール$1\mathrm{mL}$を加えた。再び5分間$1200\mathrm{rpm}$で遠心した。上澄みを完全に除去し、$55\mathrm{^{\circ}C}$で乾燥した。その後MilliQ$30\mathrm{\mu L}$によりDNAを溶解させた。
 
+\subsection{制限酵素処理によるDNA断片の確認}
+
+\quad DNA溶液$4\mathrm{\mu L}$とmilliQ$11\mathrm{\mu L}$、10x制限酵素緩衝液(rCutSmart)$2\mathrm{\mu L}$を制限酵素入りの溶液$3\mathrm{\mu L}$に混ぜた。その後、$37\mathrm{^{\circ}C}$30分。反応後、反応溶液$5\mathrm{\mu L}$を$1\mathrm{\mu L}$の6x loading bufferが入ったエッペンチューブに加えてアガロースゲル電気泳動を$100\mathrm{V}$で30分間行った。
+\section{原理}
+
+\subsection{カラム精製}
+
+\quad 固相抽出技術を利用し、シリカまたはガラスファイバーのフィルターメンブレンにDNAを結合させ、精製/分離を行う方法である。遠心処理を行うことで、DNAのシリカへの結合、洗浄、溶出を行うことができる。\cite{1}
+
+\subsection{制限酵素処理}
+
+\quad 制限酵素は、二本鎖DNAの特定の塩基配列を認識して結合し、切断する酵素である。制限酵素は切断に必要な因子や切断の仕方によってⅠ型からⅢ型の3種類に分けられる。Ⅰ型, Ⅲ型は切断部位が一定でないのに対し、Ⅱ型は特定の部位(通常DNA上の回転対称配列)を切断するため、遺伝子組み換え実験にはⅡ型酵素が用いられる。\cite{2}
+
+\subsection{Ligation}
+
+\quad ライゲーションとは、DNAリガーゼを使ってDNA断片同士をつなぐ反応で、DNA末端を5'リン酸と3' OH基間で結合するものである。\cite{3}
+
+\subsection{Loading buffer}
+
+\quad Loading bufferは、電気泳動用核酸サンプルを調整する際に添加する試薬である。ローディングバッファーにはアプライの際にウェルの中にDNAサンプルが沈むよう比重を増やすためのグリセロールまたはフィコールと、電気泳動の進行を観察できる色素が含まれている。\cite{4}
+
+\subsection{電気泳動}
+
+\quad ゲル電気泳動は、拡散やタンパク質等の生体分子を高分子ハイドロゲル中において電気泳動し、分子サイズに移動した泳動度の違いを利用して分離、分析する方法である。殿下を有する分子は溶液中において、伝場中に置かれると一定方向に向かって動き出す。この時、不電化を有する分子は陽極側に、正電荷を有する分子は陰極側に泳動される。高分子ハイドロゲル中において、これらの分子が泳動された時、網目からの抵抗を受けることで分子はそのゲルサイズに依存してゲル中を泳動することが知られている。大きな分子ほど遅く、小さな分子ほど早く泳動される。これは高分子ゲルが作り上げる網目の間を分子が通り抜ける速度が分子サイズに依存しているためである。\cite{5}この性質を利用して、DNAやタンパク質等の生体高分子を分離、分析することができる。
+
+\subsection{EtBr}
+
+\quad EtBr(臭化エチジウム)は、DNA塩基対に似た挿入剤であり、核酸蛍光タグとして使用することができる。EtBrはDNAと結合すると強い蛍光を発する。これは、塩基対の間に見られる疎水性環境のためである。この環境に移動し、溶媒から離れることにより、EtBrカチオンは水に関連する分子を放出させられる。水は強力な蛍光消光剤であるため、水分子を除去するとEtBrが蛍光を発するようになる。\cite{6}
+
+\subsection{形質転換}
+
+\quad 形質転換(transformation)は、外来性DNAが宿主細胞に移入されるプロセスである。形質転換の方法には、ケミカルトランスフォーメーション、エレクトロポレーションなどがある。ケミカルトランスフォーメーションでは、塩化カルシウムのような2価の陽イオンで処理することにより、コンピテントセル(細胞が外来DNAを取るこむことができる状態)にし、最近の細胞壁をDNAに対して透過性にする。熱ショックによって細胞膜に一時的に孔を形成し、外来DNAの細胞内への移行を可能にする。エレクトロポレーションでは短い電気パルスを用いて最近細胞を一時的に投下性にする。この状態で外来DNAを細胞に加えることで、細胞内に取り込まれる。\cite{7}
+
+\subsection{アンピシリン(Amp)}
+
+\quad アンピシリンはペニシリン系の抗生物質で、バクテリア細胞壁のペプチドグリカン架橋の合成阻害することでバクテリアの生育を阻害する。D-アラニル-D-アラニンに作用し、ペプチドグリカン合成に関与するトランスペプチダーゼが類似体であるアンピシリンを誤認することで細胞壁の架橋が阻害される。このため菌の細胞壁は細胞分裂ごとに弱くなり、数回の細胞分裂の末、浸透圧に耐えられなくなり溶菌して死滅する。一方で、アンピシリン分解酵素であるβラクタマーゼはアンピシリンのβラクタム構造を加水分解することでアンピシリンを失活させる。目的遺伝子をプラスミドベクターに組込み形質転換を行うとき、ベクターDNAにβラクタマーゼ遺伝子が含まれていると、アンピシリン存在下で培養した場合、プラスミドDNAが導入されたバクテリアが生育でき、選び出すことができる。\cite{8}
+
+\subsection{IPTG}
+
+\quad IPTG(isopropyl β-D-thiogalactopyranoside)は、大腸菌（E.coli）などのラクトース（lac）オペロン制御下にある遺伝子の発現を誘導する化合物である。IPTGは、lacリプレッサーに結合し不活性化することでlacオペロンの転写を誘導する機能を持ち、また発現するβ-ガラクトシダーゼ（lacZ）の基質とはならないため、持続的に機能する。\cite{9}
+
+
+\subsection{ミニプレップ}
+
+\quad ミニプレップは、プラスミドDNAを抽出するための手法である。Solution1に含まれるリゾチームは、細胞壁の分解、グルコースは、浸透圧を与えて細胞膜を破壊する役目、EDTAは金属イオンを活性中心に持つデオキシリボヌクレアーゼを阻害する目的がある。この操作は細胞壁を溶解する操作である。Solution2は、界面活性剤とpHにより、細胞成分を完全に溶解するのがこの操作である。SDSは細胞の膜構造を破壊し、水酸化ナトリウムの高いpHにより染色体DNAを変性させる。Solution3はpHを急激に中性に戻すことで、溶解したタンパク質とSDS,染色体DNAが複合体を形成し、不溶性の凝集物を形成する。\cite{10}
+
+\subsection{アルコール沈殿}
+
+\quad アルコール沈澱は、DNAを溶液から沈殿させる方法である。DNAは負に帯電したリン酸骨格を持ち、水溶液中で親水性コロイドとして存在している。エタノールなどの水溶性の有機溶媒を加えると水和水が奪われる。これに塩を加えるとリン酸基の負電荷間の反発が解消され、ファンデルワールス力が優勢となり、DNA鎖どうしが凝集して沈澱する。磯プロパノールはエタノールより疎水性が高いため、核酸の溶解度が低く、より少ない量で拡散を沈澱させることができる。\cite{11}
 
 \section{結果}
-\section{考察}
+
+\subsection{PCR後の電気泳動}
+
+\quad PCR後の電気泳動の結果を図\ref{fig:pcr_result}に示す。この段階ではバンドを確認することができなかった。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=5cm]{./data/pcr_result.png}
+    \caption{PCR後の電気泳動(左から4レーン目)}
+    \label{fig:pcr_result}
+\end{figure}
+
+\subsection{Ligationの電気泳動}
+
+\quad Ligation前の電気泳動の結果を図\ref{fig:ligation_result_before}に、Ligation後の電気泳動の結果を図\ref{fig:ligation_result_after}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=12cm]{./data/ligation_result_before.png}
+    \caption{Ligation前の電気泳動(2-2)}
+    \label{fig:ligation_result_before}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=12cm]{./data/ligation_result_after.png}
+    \caption{Ligation後の電気泳動(2-2)}
+    \label{fig:ligation_result_after}
+\end{figure}
+
+\subsection{Transformation}
+
+\quad LBプレートに生えたコロニーを図\ref{fig:transformation_E}, \ref{fig:transformation_G}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/transformation_E.png}
+    \caption{LBプレート(ペリレンとEGFP)の結果(2-2)}
+    \label{fig:transformation_E}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/transformation_G.png}
+    \caption{LBプレート(ペリレンとGABA)の結果(2-2)}
+    \label{fig:transformation_G}
+\end{figure}
+
 \section{設問/課題}
-\section{参考文献}
+
+\subsection{PCR法で遺伝子増幅を行う際、増幅反応が理想的に進行した場合、8回のサイクル反応で、目的遺伝子は何倍に増幅されるか。}
+
+\quad 1サイクルで2倍に増幅されるため、$2^{8}=256$倍に増幅される。
+
+\subsection{PCR法における反応の理想条件について論ぜよ。}
+
+
+
+\section{考察}
+
+
+
+
 \begin{thebibliography}{99}
-    % \bibitem{1} hogehoge \url{https://www.google.com/}
+    \bibitem{1} ゲノムDNA精製システム選択ガイド, ThermoFisher, \url{https://www.thermofisher.com/blog/learning-at-the-bench/dna_nap_bid_ts_1}
+    \bibitem{2} 制限酵素, 東邦大学, \url{https://www.toho-u.ac.jp/sci/biomol/glossary/bio/restriction_enzyme.html}
+    \bibitem{3} クローニングの基礎知識, ThermoFisher, \url{https://www.thermofisher.com/jp/ja/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning/cloning/traditional-cloning-basics.html}
+    \bibitem{4} Loading buffer, ニッポン・ジーン株式会社, \url{https://www.nippongene.com/siyaku/product/buffer/electrophoresis/loading-buffer.html}
+    \bibitem{5} ゲル電気泳動, 公益社団法人高分子学会, \url{https://www.spsj.or.jp/equipment/news/news_detail_36.html}
+    \bibitem{6} Ethidium Bromide(EtBr), ベルトールドジャパン株式会社, \url{https://www.berthold-jp.com/ethidium-bromide/}
+    \bibitem{7} What Is DNA Transformation, GenScript, \url{https://www.genscript.com/what-is-dna-transformation.html}
+    \bibitem{8} 教育目的遺伝子組換え実験, 大藤道衛, \url{https://web.tuat.ac.jp/~idenshi/Japanese%20Files/Seminar_Folder/rikakyoin_Folder/H27_Folder/Archives%20H27/H27_kensyu345_1.pdf}
+    \bibitem{9} 植物由来のIPTG, funakoshi, \url{https://www.funakoshi.co.jp/contents/51935}
+    \bibitem{10} いまさら聞けないプラスミド抽出法の原理, 高木 昌宏, \url{https://www.sbj.or.jp/wp-content/uploads/file/sbj/8909/8909_yomoyama_1.pdf}
+    \bibitem{11} エタノール沈殿あれこれ, 春木 満, \url{https://www.sbj.or.jp/wp-content/uploads/file/sbj/8905/8905_yomoyama-1.pdf}
 \end{thebibliography}
 
 \end{document} 
