@@ -39,6 +39,9 @@
 \newpage
 
 \section{目的}
+
+\quad 遺伝子組み換えの技術は疾病の遺伝子治療や動物のクローン作製などに応用され、大きな成果を挙げつつある。本実験では、遺伝子の大腸菌への導入、連結酵素によるDNAの結合、制限酵素によるDNA断片の切断を行い、得られたDNA断片を電気泳動により分析することを目的とする。
+
 \section{操作}
 
 \subsection{PCR}
@@ -135,53 +138,223 @@
 
 \subsection{Ligationの電気泳動}
 
-\quad Ligation前の電気泳動の結果を図\ref{fig:ligation_result_before}に、Ligation後の電気泳動の結果を図\ref{fig:ligation_result_after}に示す。
+\quad Ligation後の電気泳動の結果を図\ref{fig:ligation_result_before}に示した。
+
+% TODO: 検量線を作成してDNA断片の大きさを求める
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=12cm]{./data/ligation_result_before.png}
-    \caption{Ligation前の電気泳動(2-2)}
-    \label{fig:ligation_result_before}
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=12cm]{./data/ligation_result_after.png}
+    \includegraphics[width=12cm]{./data/ligation.png}
     \caption{Ligation後の電気泳動(2-2)}
-    \label{fig:ligation_result_after}
+    \label{fig:ligation_result_before}
 \end{figure}
 
 \subsection{Transformation}
 
-\quad LBプレートに生えたコロニーを図\ref{fig:transformation_E}, \ref{fig:transformation_G}に示す。
+\quad 今回の実験では、Transformation後のLBプレートにコロニーが発生しなかった。
+
+\subsection{制限酵素処理}
+
+\quad 制限酵素処理後の電気泳動の結果を図\ref{fig:restriction_result}に示す。
+
+% TODO: なんか班ごとに入ってるやつと入ってないやつがあったから聞くこと
+% TODO: 検量線を作成してDNA断片の大きさを求める
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=8cm]{./data/transformation_E.png}
-    \caption{LBプレート(ペリレンとEGFP)の結果(2-2)}
-    \label{fig:transformation_E}
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=8cm]{./data/transformation_G.png}
-    \caption{LBプレート(ペリレンとGABA)の結果(2-2)}
-    \label{fig:transformation_G}
+    \includegraphics[width=12cm]{./data/restriction.png}
+    \caption{制限処理後の電気泳動(2-2)}
+    \label{fig:restriction_result}
 \end{figure}
 
 \section{設問/課題}
 
 \subsection{PCR法で遺伝子増幅を行う際、増幅反応が理想的に進行した場合、8回のサイクル反応で、目的遺伝子は何倍に増幅されるか。}
 
-\quad 1サイクルで2倍に増幅されるため、$2^{8}=256$倍に増幅される。
+\quad 1サイクルで2倍に増幅されるため、$2^{8}=256$倍に増幅される。これは副生成物を含めた全てのDNAを表している。副生成物はn回のサイクルで2nずつ増幅されるため、目的遺伝子は$2^8 - 2\times8 = 240倍$となる。
 
 \subsection{PCR法における反応の理想条件について論ぜよ。}
 
+\quad PCRに影響を与える因子には以下のものがある。\cite{12}
 
+\begin{enumerate}
+    \item 酵素濃度
+    
+    Tag DNAポリメラーゼは、通常$1〜2.5\mathrm{units/\mu L}$反応液で使用される。一般に濃度が高すぎると非特異的産物が出現することがあり、逆に濃度が低すぎると増幅が不十分になる。
+    \item dNTP濃度
+    
+    通常それぞれ$20〜200\mathrm{\mu mol/l}$である。各dNTPの濃度は同一でないと誤った取り込みによるエラーが生じる原因になる。
+
+    \item \ce{Mg^{2+}}濃度
+    
+    通常、総dNTP濃度より$0.5〜2.5\mathrm{mmol/l}$高い濃度が採用される。鋳型DNAやプライマーから持ち込まれるEDTAなどのキレート剤の濃度に注意する必要がある。
+    \item プライマー
+    
+    プライマーは通常18〜28ヌクレオチド長で、G+C含量が50〜60\%で、Tm値が$55〜80\mathrm{^{\circ}C}$となるように設計する。2つのプライマーはそれぞれ$0.1〜0.5\mathrm{\mu mol/l}$で使用する。
+
+    \item 温度
+    
+    変性温度は高いほど特異性や増幅度が高くなるが、逆にTagDNAポリメラーゼの活性低下を早めるので、普通は$94〜96\mathrm{^{\circ}C}$で15〜30秒間である。プライマーのアニーリング温度は、Tm値より$5\mathrm{^{\circ}C}$程低い温度が良く、通常$50〜60\mathrm{^{\circ}C}$である。アニーリング温度が高いほど特異性は高くなる。伸長反応の温度は、$72\mathrm{^{\circ}C}$が多く用いられる。
+
+    \item サイクル数
+    
+    サイクル数は多いほど増幅度は高くなるが、同時に非特異的産物も増加する。通常は40サイクルを超えないことが望ましい。
+\end{enumerate}
+
+\subsection{Ligation溶液（P+EまたはP+G）を加えて形質転換させた大腸菌を播いたLBプレート上の青と白のコロニーの比率を比較し、違いがある場合にはその原因を考察せよ。}
+
+\quad 本実験では、コロニーが発生しなかったため、他の班のデータを使用する。LBプレートに生えたコロニーを図\ref{fig:transformation_E}, \ref{fig:transformation_G}に示す。
+
+\begin{figure}[htbp]
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=6cm]{./data/transformation_E.png}
+        \caption{LBプレート(ペリレンとEGFP)の結果(2-2)}
+        \label{fig:transformation_E}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=6cm]{./data/transformation_G.png}
+        \caption{LBプレート(ペリレンとGABA)の結果(2-2)}
+        \label{fig:transformation_G}
+    \end{minipage}
+\end{figure}
+
+それぞれのコロニーの数を数えた結果を表\ref{tab:transformation_E}, \ref{tab:transformation_G}に示す。
+
+\begin{table}[htbp]
+    \centering
+    \caption{LBプレート(ペリレンとEGFP)の結果(2-2)}
+    \begin{tabular}{|c|c|c|c|} \hline
+        青 & 白 & 合計 & 青/白 \\ \hline
+        2 & 135 & 137 & 0.015  \\ \hline
+    \end{tabular}
+    \label{tab:transformation_E}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{LBプレート(ペリレンとGABA)の結果(2-2)}
+    \begin{tabular}{|c|c|c|c|} \hline
+        青 & 白 & 合計 & 青/白 \\ \hline
+        0 & 8 & 8 & 0 \\ \hline
+    \end{tabular}
+    \label{tab:transformation_G}
+\end{table}
+
+結果から、ペリレンとEGFPを用いた場合は青いコロニーが残存したが、ペリレンとGABAを用いた場合は、青いコロニーが残存しなかった。これは、ペリレンとEGFPを用いた場合は、完全にはすべてのプラスミドに外来DNAが挿入されていなかったため、青いコロニーが残存したと考えられる。一方で、ペリレンとGABAを用いた場合は、完全にはすべてのプラスミドに外来DNAが挿入されていたため、青いコロニーが残存しなかったと考えられる。
+
+% \quad また、ペリレンとEGFPを用いた場合の方が、発生したコロニーの数が多かった。
+% TODO
+
+\subsection{青いコロニーと白いコロニーが生成するのはなぜか？}
+
+\quad \beta-D-ガラクトシダーゼの基質である青色色素X-galを寒天培地に加えておくと、\beta-D-ガラクトシダーゼの作用により分解されてコロニーは青色になる。一方で、この酵素活性を欠くコロニーは白色になる。このようにして、外来DNAがプラスミドに挿入されたかどうかを判断することができる。\cite{13}
+% https://www.sbj.or.jp/wp-content/uploads/file/sbj/9401/9401_yomoyama.pdf
+
+\subsection{電気泳動によるDNAの確認の際に、白いコロニーを液体培養したにもかかわらず制限酵素反応から想定されるバンドが検出できないことがある。その原因を推測せよ。}
+
+\quad 制限酵素の中には、DNAに強く結合しているものも存在する。そのため、想定されるバンドより大きいものまたはスメアが検出されることが考えられる。この場合、SDSを含むローディング色素を使用し、切断されたDNAから酵素を加熱して分離することによって誤ったゲルシフトを防ぐことができる。\cite{14}
+% https://www.thermofisher.com/jp/ja/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning/restriction-enzymes/restriction-enzyme-key-considerations.html
+
+\subsection{制限酵素反応後の電気泳動で確認されたバンドが示すDNAのサイズを決定せよ。}
+
+\quad 図\ref{fig:restriction_result}から、検量線を作成し、観測されたバンドから確認されたDNA断片の大きさを求めた。検量線を図\ref{fig:line_restriction}、各バンドの泳動距離を図\ref{tab:restriction}に、DNA断片を求めた結果を表\ref{tab:restriction_result}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/line_restriction.png}
+    \caption{制限処理後の電気泳動の検量線}
+    \label{fig:line_restriction}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{制限酵素反応後の電気泳動で確認されたバンドの泳動距離(px)}
+    \begin{tabular}{|c|c|c|} \hline
+        EGFP(EcoRl, XhoⅠ) & GABA(EcoRl, XhoⅠ) & GABA(EcoRl, HindⅢ) \\ \hline
+        328 & 297 & 327 \\
+        452 & 324 & 360 \\
+        & & 412 \\ \hline
+    \end{tabular}
+    \label{tab:restriction}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{制限酵素反応後の電気泳動で確認されたバンドが示すDNAのサイズ(bp)}
+    \begin{tabular}{|c|c|c|} \hline
+        EGFP(EcoRl, XhoⅠ) & GABA(EcoRl, XhoⅠ) & GABA(EcoRl, HindⅢ) \\ \hline
+        2926 & 3811 & 2951 \\
+        1017 & 3028 & 2228 \\
+        & & 1431 \\ \hline
+    \end{tabular}
+    \label{tab:restriction_result}
+\end{table}
+
+また、制限酵素処理で理論的に確認されるバンドについて図\ref{fig:restriction_theory}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=12cm]{./data/logic_restriction.png}
+    \caption{制限酵素反応後の電気泳動で確認されるバンドの理論値}
+    \label{fig:restriction_theory}
+\end{figure}
+
+実測値と比較すると、EGFPでのサイズが小さいバンド以外での誤差が±5\%以内であり、制限酵素処理によってておおむね正しくDNA断片が得られたと考えられる。EGFPのDNAが小さい方のバンドで理論値と実測値の誤差が大きい原因として、検量線の縦軸(DNAの長さ)は対数をとった値を使用しており、DNAの長さが小さいほど、検量線から算出した値の定量的信頼性が低くなっていることが考えられる。また、ゲルに埃などのゴミが混入していたことも考えられる。
 
 \section{考察}
 
+\subsection{Ligation後の電気泳動}
 
+\quad 課題5.6と同様に、Ligation後の電気泳動の結果から検量線を作成して、観測されたバンドから確認されたDNA断片の大きさを求めた。検量線を図\ref{fig:line_ligation}、各バンドの泳動距離を図\ref{tab:ligation}に、DNA断片を求めた結果を表\ref{tab:ligation_result}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/line_ligation.png}
+    \caption{Ligation後の電気泳動の検量線}
+    \label{fig:line_ligation}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Ligation後の電気泳動で確認されたバンドの泳動距離(px)}
+    \begin{tabular}{|c|c|c|} \hline
+        P, E, G & P, E & P, G \\ \hline
+        196 & 199 & 151 \\
+        300 &  & 200 \\ \hline
+    \end{tabular}
+    \label{tab:ligation}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Ligation後の電気泳動で確認されたバンドが示すDNAのサイズ(bp)}
+    \begin{tabular}{|c|c|c|} \hline
+        P, E, G & P, E & P, G \\ \hline
+        3759 & 3604 & 7072 \\
+        872 &  & 3554 \\ \hline
+    \end{tabular}
+    \label{tab:ligation_result}
+\end{table}
+
+また、pBlueScript, EGFP, GABA, pBlueScript + EGFP, pBlueScript + GABAのDNA断片の大きさの理論値を表\ref{tab:ligation_theory}に示す。
+
+\begin{table}[htbp]
+    \centering
+    \caption{Ligation後の電気泳動で確認されたバンドが示すDNAのサイズ(bp)}
+    \begin{tabular}{|c|c|c|c|c|} \hline
+        pBlueScript & EGFP & GABA & pBlueScript + EGFP & pBlueScript + GABA \\ \hline
+        2961 & 726 & 3648 & 3687 & 6647\\ \hline
+    \end{tabular}
+    \label{tab:ligation_theory}
+\end{table}
+
+以上の理論値と実測値を比較すると、pBlueScript + EGFP, pBlueScript + GABAに対応するDNAが確認できるため、Ligationが成功していると言える。
+
+\subsection{PCR後の電気泳動}
+
+\quad 本実験では、EGFPのPCR後の電気泳動で、バンドを確認することができなかった。また、考察6.1でLigation後のバンドの同定をした際に、pBlueScript + EGFPのバンドは確認できたことから、PCR自体には成功しているがバンドは観測されなかったことが言える。Ligation後の電気泳動でGABAに対応する大きさのバンドは観測されたが、EGFPは観測されなかったことから、PCRで使用した際にEGFPの希釈を過剰に行なってしまったことが原因と考えられる。
 
 
 \begin{thebibliography}{99}
@@ -196,6 +369,9 @@
     \bibitem{9} 植物由来のIPTG, funakoshi, \url{https://www.funakoshi.co.jp/contents/51935}
     \bibitem{10} いまさら聞けないプラスミド抽出法の原理, 高木 昌宏, \url{https://www.sbj.or.jp/wp-content/uploads/file/sbj/8909/8909_yomoyama_1.pdf}
     \bibitem{11} エタノール沈殿あれこれ, 春木 満, \url{https://www.sbj.or.jp/wp-content/uploads/file/sbj/8905/8905_yomoyama-1.pdf}
+    \bibitem{12} PCR, ニッポン・ジーン株式会社, \url{https://www.nippongene.com/siyaku/product/pcr/cat_pcr.pdf}
+    \bibitem{13} 大腸菌の菌株の特徴を知ろう, 林 勇樹, \url{https://www.sbj.or.jp/wp-content/uploads/file/sbj/9401/9401_yomoyama.pdf}
+    \bibitem{14} 制限酵素の主な注意点, ThermoFisher, \url{https://www.thermofisher.com/jp/ja/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning/restriction-enzymes/restriction-enzyme-key-considerations.html}
 \end{thebibliography}
 
 \end{document} 
