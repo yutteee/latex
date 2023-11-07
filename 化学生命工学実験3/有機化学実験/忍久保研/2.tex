@@ -1,0 +1,95 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+\flushleft{
+    \huge{令和5年度 化学生命工学実験3}
+    
+    \vspace{100pt}
+    
+    \huge{ルミノールによる化学発光}
+}
+
+\vfill
+\begin{flushright}
+
+        \Large{\underline{学籍番号 : 082110424}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{氏名 : 中村優作}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{実施日 : 10/26, 27, 31 }}
+        
+\end{flushright}
+
+\newpage
+
+\section{目的}
+
+\quad ルミノールを合成し、化学発光を観察しそのメカニズムについて考察することを目的とする。
+
+\section{操作}
+
+\subsection{3-ニトロフタルヒドラジド(Ⅲ)の合成}
+
+\quad アルミホイルで蓋をしたチューブに、2-ニトロフタル酸無水物$0.5\mathrm{g}$と酢酸$2\mathrm{mL}$を加えた。その後、$120\mathrm{^{\circ}C}$で加熱し、完全に溶解するまで攪拌したところ、黄色の透明な溶液が得られた。室温になるまで冷却し、ヒドラジン水和物$0.14\mathrm{mL}$を混合物が固まらないように激しく振りながら攪拌した。$120\mathrm{^{\circ}C}$で加熱しながら10分攪拌した。その後室温まで冷却し、水で複数回、メタノールで一回洗浄しながら吸引濾過をしたところ、黄淡色の結晶が得られた。結晶の重さを測ったところ、$0.285\mathrm{g}$であった。
+
+\subsection{3-アミノフタルヒドラジド(Ⅲ)の合成}
+
+\quad 操作2.2.1で得られた固体をチューブに入れ、質量パーセント濃度が10\%の\ce{NaOH}$2.5\mathrm{mL}$に溶かしたところ、暗赤色の溶液が得られた。白い固体が沈澱しており、スパチュラーで砕いた。その後、亜硫酸水素ナトリウム$1.5\mathrm{g}$を加え、少量の水でチューブの壁面を洗った。攪拌しながら5分間加熱したところ、黄色の溶液が得られた。室温まで冷却した後、$1.0\mathrm{mL}$の酢酸を加えた。流水でチューブを冷却したところ、黄色の沈殿物が形成した。吸引濾過をして、水で洗浄したところ、黄色の固体が得られた。結晶の重さを測ったところ、$0.045\mathrm{g}$であった。
+
+\subsection{ルミノールの化学発光}
+
+操作2.2.2で得られた固体を2\%\ce{NaOH}$10\mathrm{mL}$に溶かした。この溶液を水$15\mathrm{mL}$で希釈した。また、別のビーカーに10\%フェリシアン酸カリウム水溶液$2.5\mathrm{mL}$、10\%\ce{H2O2}$2.5\mathrm{mL}$および水$10\mathrm{mL}$を混合したところ、黄色透明の溶液が得られた。これらの溶液を暗所で反応させたところ、青色に発光した。
+
+\section{結果}
+
+\quad ルミノールの発光による化学発光の結果を図\ref{fig:chemiluminescence}に示す。
+
+\begin{figure}
+    \centering
+    \includegraphics[width=6cm]{./data/luminol.png}
+    \caption{ルミノールの化学発光}
+    \label{fig:chemiluminescence}
+\end{figure}
+
+\section{設問/課題}
+
+\subsection{操作2.2.1の溶液を\ce{NaOH}溶液で処理すると、色が無色から暗赤色に変化する理由を説明せよ。}
+
+\quad 3-ニトロフタルヒドラジドと\ce{NaOH}が反応することにより、吸収波長が増大して、暗赤色を示すようになったと考えられる。吸収光の補色がヒトの感じる色であり、暗赤色の補色の青〜緑の光を吸収したと考えられる。\cite{1}そのため、3-ニトロフタルヒドラジドと\ce{NaOH}が反応し、$450$〜$500\mathrm{nm}$の波長を吸収する共役化合物が生成したと考えられる。
+
+\subsection{ルミノールが化学発光を示すメカニズムを説明せよ。}
+\quad アルカリ溶液中で、鉄などの金属が触媒となり、ジアザキノン中間体を形成することで、フタル酸ジアニオンの励起状態が生じる。さらに反応が進むと、最終的に2-アミノフタル酸ジアニオンが形成され、基底状態に戻る。この励起状態から基底状態への遷移による発光が、ルミノールの化学発光である。\cite{2}\cite{3}
+
+\section{考察}
+
+\subsubsection{3-ニトロフタルヒドラジンの合成}
+
+\quad 理論値は$0.53\mathrm{g}$であったが、実験値は$0.285\mathrm{g}$であり、収率は$54\%$であった。収率が低い原因としては、生成物がメタノールに溶けるため、吸引濾過をした際に、固体が失われてしまった可能性がある。
+
+\subsubsection{3-アミノフタルヒドラジドの合成}
+
+\quad 理論値は$0.24\mathrm{g}$であったが、実験値は$0.045\mathrm{g}$であり、収率は$19\%$であった。収率が低い原因としては、水で壁を洗った際の量が多く、加熱で水が蒸発した際に、固体が失われてしまった可能性がある。
+
+\begin{thebibliography}{99}
+  \bibitem{1} 色と吸収スペクトル, 飛田 満彦, \url{https://www.jstage.jst.go.jp/article/fiber1944/43/5/43_5_P161/_pdf}
+  \bibitem{2} 化学発光と生物発光の基礎化学, 平野 誉, \url{https://www.jstage.jst.go.jp/article/kakyoshi/64/8/64_376/_pdf}
+  \bibitem{3} ルミノール反応実験キット, FUJIFILM, \url{https://labchem-wako.fujifilm.com/jp/product_data/docs/01997502_doc01.pdf}
+\end{thebibliography}
+
+\end{document} 
