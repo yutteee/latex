@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2023-11-21T16:42:03.431Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="IhzZSQdwFo1shwlmQ9wE" version="22.1.3" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1461" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="yXMmpBXR5hyBj1gegQAW-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="三角フラスコ" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="353" y="20" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-0" target="yXMmpBXR5hyBj1gegQAW-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-0" value="EtOAc(3mL)中Ru(3mg, 0.01mmol), アルキン2a(0.2mL, 1.8mmol)溶液" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="80" width="407" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-0" target="yXMmpBXR5hyBj1gegQAW-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-2" target="yXMmpBXR5hyBj1gegQAW-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-2" value="EtOAc(2mL)中ジイン1(0.104g, 0.42mmol)を5分間滴下添加" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="233" y="140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-3" target="yXMmpBXR5hyBj1gegQAW-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-3" value="EtOAc(2mL)中ジイン1(0.104g, 0.40mmol)を5分間滴下添加" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="233" y="200" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-4" target="yXMmpBXR5hyBj1gegQAW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-4" value="TLCで反応の進行を確認" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="328" y="260" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-5" target="yXMmpBXR5hyBj1gegQAW-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-5" value="シリカゲルクロマトグラフィーで溶液を30mLずつで3回取得" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="233" y="320" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-6" target="yXMmpBXR5hyBj1gegQAW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-6" value="各取得溶液をTLCで確認" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="328" y="380" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-7" target="yXMmpBXR5hyBj1gegQAW-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-7" value="1回目の溶液にのみ反応物が含まれていたため、1回目の溶液を丸底フラスコに" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="183" y="440" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-8" target="yXMmpBXR5hyBj1gegQAW-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-8" value="エバポレーションで茶色の固体を得た" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="290" y="500" width="247" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-14" target="yXMmpBXR5hyBj1gegQAW-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-14" value="EtOc 2mLを加えた" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="342" y="564.5" width="143" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-15" target="yXMmpBXR5hyBj1gegQAW-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-15" value="70℃の湯浴で茶色の透明な溶液になるまで撹拌" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="264" y="620" width="298" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-17" target="yXMmpBXR5hyBj1gegQAW-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-17" value="ヘキサン10mLを加えた" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="327.5" y="680" width="170.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-19" target="yXMmpBXR5hyBj1gegQAW-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-19" value="ヘキサン20mLで洗浄しながら吸引濾過" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="287" y="800" width="253" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yXMmpBXR5hyBj1gegQAW-20" target="yXMmpBXR5hyBj1gegQAW-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-20" value="3日間静置" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="364" y="740" width="98" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXMmpBXR5hyBj1gegQAW-21" value="茶色の固体を0.063g得た" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="328" y="860" width="171" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
