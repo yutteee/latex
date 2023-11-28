@@ -18,7 +18,7 @@
     
     \vspace{100pt}
     
-    \huge{}
+    \huge{ルテニウム触媒を用いたアルキンの[2+2+2]環化異性化によるベンゼン環の合成}
 }
 
 \vfill
@@ -43,15 +43,173 @@
 \newpage
 
 \section{実験の目的}
+
+\quad ルテニウム触媒による[2+2+2]環化は、3つのアルキンからベンゼン環を合成する反応である。新たにC-C結合を形成することができるため、医薬品、農薬、材料の合成などに有用である。本実験では、[2+2+2]環化によって合成を行い、イソインドリン誘導体を合成し、得られた生成物について考察することを目的とする。
 \section{反応条件と実験操作}
+
+\subsection{反応条件}
+
+\quad 反応のスキームを図\ref{fig:scheme}に示す。アルキン$0.2\mathrm{mL}$($1.8\mathrm{mmol}$)とジイン$100\mathrm{mg}$($0.42\mathrm{mmol}$)を反応させている。生成物の理論値は$0.15\mathrm{g}$($0.42\mathrm{mmol}$)である。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=9cm]{./data/2.1.png}
+    \caption{反応のスキーム}
+    \label{fig:scheme}
+\end{figure}
+
+\subsection{実験操作}
+
+\quad 本実験操作のフローチャートを図\ref{fig:flowchart}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=9cm]{./data/flowchart.png}
+    \caption{実験操作のフローチャート}
+    \label{fig:flowchart}
+\end{figure}
+
 \section{実験結果}
+
+\quad 溶液調整後のTLCの結果を図\ref{fig:TLC1}に示す。生成物を中央と右にプロット、原料を左と中央にプロットした。溶媒にはヘキサン:酢酸エチル=4:1溶液を用いた。結果から、生成物のプロットが原料のプロットよりも少し下に位置しており、反応が進行していることがわかる。
+
+\quad シリカゲルクロマトグラフィー後のTLCの結果を図\ref{fig:TLC2}に示す。一番左に原料、左から順にかけて1,2,3回目のクロマトグラフィーを行った溶液のTLCの結果である。溶媒にはヘキサン:酢酸エチル=4:1溶液を用いた。1回目のクロマトグラフィーでのみ、生成物のプロットが確認できた。
+
+
+\begin{figure}
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=2cm]{./data/TLC1.png}
+        \caption{溶液調整後のTLC}
+        \label{fig:TLC1}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=1.8cm]{./data/TLC2.png}
+        \caption{シリカゲルクロマトグラフィー後のTLC}
+        \label{fig:TLC2}
+    \end{minipage}
+\end{figure}
+
+\quad 収率を計算すると以下のようになった。
+
+\begin{equation}
+    (収率) = \frac{0.063\mathrm{g}}{0.147\mathrm{g}} \times 100 = 43\%
+\end{equation}
+
 \section{考察}
+
+\subsection{収率を上げるには}
+
+\quad 目的生成物の収率は43\%と低かった。これは、再結晶の際に完全には目的生成物が析出していなかったためだと考えられる。室温で再結晶を行っていたため、さらに冷却することで目的生成物の収率を上げることができたと考えられる。
+
+\subsection{イソインドリンについて}
+
+\quad 得られた生成物はイソインドリン誘導体である。イソインドリンは顔料として有用である。耐候性、耐熱性、耐溶剤性を有しており、自動車用の塗料からプラスチック着色剤まで幅広く用いられている。\cite{1}
+% https://www.jstage.jst.go.jp/article/shikizai1937/55/9/55_677/_pdf/-char/ja
+
+
 \section{課題}
+
+\subsection{Describe the structure of alkyne 2 that you used and the estimated structure of your product and explain the reason.}
+
+\quad アルキン2aの分子式は\ce{C8H6}である。不飽和度が6で、アルキル基が存在するので、残りの残りの不飽和度は4である。導入できる二重結合は最大3つなので、環が存在することがわかるため、アルキン2aはベンゼン環を持つ。したがって、アルキン2aの構造は図\ref{fig:alkyne}のようになる。
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=4cm]{./data/alkyne.png}
+    \caption{アルキン2aの構造}
+    \label{fig:alkyne}
+\end{figure}
+
+\subsection{Display the assignment of sp, sp2, or sp3 to all carbon atoms in your substrates (diyne 1 and alkyne 2) and product.}
+
+\quad 図\ref{fig:5.2}に帰属を示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=12cm]{./data/5.2.png}
+    \caption{sp, sp2, or sp3の帰属}
+    \label{fig:5.2}
+\end{figure}
+
+\subsection{Why is it necessary that an excess amount of alkyne 2 was used and diyne 1 was slowly added to the reaction mixture? Explain the reason. If one equivalent of alkyne 2 was used and/or diyne 1 was added to the reaction mixture immediately, what would be happened?}
+
+\quad 副生成物が生じると考えられるためである。ジイン1とルテニウムが中間体を形成し、それにアルキン2の末端アルキンが反応することで生成物が得られる。この時考えられる副反応として、ジイン1の末端アルキンが中間体に反応し、ジイン1同士で[2+2+2]環化することが考えられる。この副反応をできるだけ抑えるために、ジイン1をゆっくり滴下することで、ジイン1とアルキン2の反応を優先させることができる。
+
+\subsection{Propose a practical synthetic route for diyne 1. }
+
+\quad p-トルエンスルホンアミドとプロパルギルブロミドを用いて合成することができる。アミンはハロアルカンに対して求核置換反応を起こすため、この反応を2段階で行うことでジイン1を合成することができる。\cite{2}
+
+% 21章
+
+\subsection{今回の実験において、以下の操作は何を⽬的として、どのような原理に基づいて、どのように実施するのかを説明せよ。}
+
+\subsubsection{TLC}
+
+\quad 本実験でTLCは、反応の進行を確認する目的で行った。薄層のプレートの一端を溶媒に浸すと、毛細管現象によって溶媒が移動する。このとき、プレート上に試料が存在すると溶媒の移動に伴い試料も移動し、試料と固定層の相互作用の強さの違いによって、試料によって移動する距離が異なるのを利用することで分離を行う。\cite{3}この性質を利用して、原料のプロットと生成物のプロットの位置を比較することで、反応のが進行しているかどうかを確認することができる。
+% https://labchem-wako.fujifilm.com/jp/siyaku-blog/019548.html
+\subsubsection{カラム}
+
+\quad 本実験でカラムクロマトグラフィーは、目的の生成物を分離する目的で行った。カラムをシリカゲルで満たし、物質の極性の違いによって分離を行う手法である。本実験では過剰量のアルキンを用いたため、アルキンの除去を行うためにクロマトグラフィーを行った。
+
+\subsubsection{再結晶}
+
+\quad より純粋な生成物を得るために再結晶を行った。溶解度の差を利用して、固体物質を精製する方法である。不純物と目的化合物の溶解度の差を利用して、溶媒に溶かした後、冷却することで目的化合物のみを再結晶させることができる。
+
+\subsection{より良い収率で⽬的物を得たい。どのような化学的アプローチが考えられるか。}
+
+\quad アルキンの反応性を上げると良いと考えられる。アルキンの付加反応の反応性を上げる方法として、酸触媒によるプロトンの親電子的付加が挙げられる。1置換アセチレンの場合、プロトンが付加することによって一方の炭素に正電荷が生じるため、反応性が上がると考えられる。\cite{4}
+% https://www.jstage.jst.go.jp/article/yukigoseikyokaishi1943/58/6/58_6_587/_pdf
+
+\subsection{遷移⾦属触媒を⽤いる[2+2+2]環化付加反応を⽤いれば、化合物 Aおよび B を分⼦内環化異性化反応により 1 段階で合成できる。それぞれの原料として最適と考えられる化合物を構造式で⽰せ。}
+
+\quad 図\ref{fig:A}, \ref{fig:B}に化合物A, Bの原料として最適と考えられる化合物の構造を示す。トリインの分子内[2+2+2]環化三量化反応をルテニウム触媒で起こすことで合成できると考えられる。\cite{5}
+
+% https://www.jstage.jst.go.jp/article/yukigoseikyokaishi1943/63/2/63_2_112/_pdf
+
+\begin{figure}[htbp]
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=4cm]{./data/A.png}
+        \caption{化合物Aの原料として最適と考えられる化合物}
+        \label{fig:A}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=2.7cm]{./data/B.png}
+        \caption{化合物Bの原料として最適と考えられる化合物}
+        \label{fig:B}
+    \end{minipage}
+\end{figure}
+
+\subsection{今回の[2+2+2]環化付加反応をさらに発展・応⽤させるとしたら、どのようなことができると考えられるだろうか。}
+
+\quad [2+2+2]環化付加反応によって、ベンゼン環やその他環を含む化合物を合成できることから、ヘリセンの合成に応用できると考えた。ヘリセンは環式芳香族化合物群の総称であり、キラル素子としての幅広い応用が期待されている。適切な位置に特定の官能基を導入する精密合成の開発は課題となっている。課題5.7で用いた環化三量化反応などを用いて、適切な位置に特定の官能機を導入できるのではないかと考えた。\cite{6}
+
+% https://www.ssocj.jp/wp-content/uploads/2018/12/Kazuteru_Usui.pdf
+
 \begin{thebibliography}{99}
-    % \bibitem{1} hogehoge \url{https://www.google.com/}
+    \bibitem{1} 有機顔料(II)黄色顔料, 阪井英彦・安藤浩人・村田春夫・青木茂人・鴛海功, \url{https://www.jstage.jst.go.jp/article/shikizai1937/55/9/55_677/_pdf/-char/ja}
+    \bibitem{2} ボルハルトショアー現代有機化学第8版下, 21章
+    \bibitem{3} 薄層クロマトグラフィーについて, FUJIFILM, \url{https://labchem-wako.fujifilm.com/jp/siyaku-blog/019548.html}
+    \bibitem{4} ルテニウム触媒によるアルキンへの付加反応, 徳永信・若槻康雄, \url{https://www.jstage.jst.go.jp/article/yukigoseikyokaishi1943/58/6/58_6_587/_pdf}
+    \bibitem{5} 2価ルテニウム錯体触媒を用いるアルキン類の環化三量化反応, 山本芳彦, \url{https://www.jstage.jst.go.jp/article/yukigoseikyokaishi1943/63/2/63_2_112/_pdf}
+    \bibitem{6} ヘリセンの螺旋構造内部空間に着目した機能性分子の創製研究, 臼井一晃, \url{https://www.ssocj.jp/wp-content/uploads/2018/12/Kazuteru_Usui.pdf}
 \end{thebibliography}
 
 \section{意見・感想}
+
+\quad 目的生成物が得られてよかったです。教科書に載っていない反応機構だったため、理解するのに苦労しました。
+
 \section{実験ノートのコピー}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=15cm]{./data/note.jpg}
+    \caption{実験ノート}
+    \label{fig:note1}
+\end{figure}
 
 \end{document} 
