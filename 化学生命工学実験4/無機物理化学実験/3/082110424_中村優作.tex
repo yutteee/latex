@@ -1,0 +1,302 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+\flushleft{
+    \huge{令和5年度 化学生命工学実験4}
+    
+    \vspace{100pt}
+    
+    \huge{ナノ細孔を有する金属錯体の合成と分子吸着測定}
+}
+
+\vfill
+\begin{flushright}
+
+        \Large{\underline{学籍番号 : 082110424}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{氏名 : 中村優作}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{実施日 : 11/22, 11/24, 11/28 }}
+        
+\end{flushright}
+
+\newpage
+
+\section{目的}
+
+\quad 本実験では、SIFSIX-1-Cuという金属錯体の合成を行う。SIFSIX-1-Cuはナノ空間を持つ金属錯体であり、無限骨格を有するMOFの一つである。MOFは自身が持つナノ空間に分子を吸着させることができるため、ガス分離やガス吸着材料としての応用が期待されている。本実験ではSIFSIX-1-Cuの合成をし、吸着性能の測定や構造の解析を通して考察することを目的とする。
+
+\section{操作}
+
+\subsection{SIFSIX-1-Cu粉末試料の合成}
+
+\quad \ce{Cu(NO3)2}・\ce{H2O}$243.20\mathrm{mg}$($1\mathrm{mmol}$)と、\ce{(NH4)2SiF6}$179.77\mathrm{mg}$($1\mathrm{mmol}$)を水$20\mathrm{mL}$に溶解させた(溶液Aとする)。溶液Aは青い透明な溶液となった。別のフラスコに、4,4'-ビピリジン$313.61\mathrm{g}$($2\mathrm{mmol}$)をメタノール$20\mathrm{mL}$に溶解させた(溶液Bとする)。溶液Bは無色透明の溶液であった。別の容器に、調整した溶液A,Bそれぞれ$10\mathrm{mL}$ずつ加え、17分間攪拌した。この時、溶液は紫色に濁った。得られた溶液を遠心分離で分離し、メタノールで洗浄した。この操作を2回繰り返し、紫色の個体を得た。$80\mathrm{^{\circ}C}$で30分間真空乾燥し、重量を測定したところ、$228.5\mathrm{mg}$の結晶が得られた。得られた結晶から、粉末X線解析と、熱重量分析を行った。
+
+\subsection{SIFSIX-1-Cuの単結晶試料の合成}
+
+\quad ガラス直管に溶液A$0.5\mathrm{mL}$、水・メタノール 1:1混合溶液$0.25\mathrm{mL}$、溶液B$0.5\mathrm{mL}$の順に静かに加え、一日静置した。溶液AとBの境界に紫色の個体が析出しており、一部沈殿していた。得られた結晶を取り出し、顕微鏡で観察した。また、メタノールで洗浄しながら吸引濾過をして個体を得て、粉末X線解析を行った。
+
+\subsection{X線結晶構造解析}
+
+\quad 操作2.2で作成した単結晶から、X線結晶構造解析を行った。Yadokari-XGを用いて、測定した結晶学データから構造解析を行った。また、VESTAを用いて、SIFSIX-1-Cuのシュミレーションパターンを作成した。
+
+\subsection{ガス吸着測定}
+
+\quad ガス吸着測定装置BEL-miniに、乾燥させたSIFSIX-1-Cu$0.309\mathrm{g}$の入ったサンプル管をセットし、吸着等温線測定をした。図\ref{fig:定容法}に示す様に、ガス導入前の圧力とガス導入後の圧力を計測する定容法を用いて測定をした。体積$V_d$を求めるために、MOFへの吸着量を0とみなせるヘリウムガスを用いて、定容法を行った。$V_s=9.78\mathrm{mL}$で測定を行ったところ、$P_0=11.63\mathrm{kPa}$、$P_1=6.57\mathrm{kPa}$であった。ガスを$V_s=9.78\mathrm{mL}$の\ce{CO2}に変えて、測定を行ったところ、$P_0=14.08\mathrm{kPa}$、$P_1=6.69\mathrm{kPa}$であった。また、室温は$294\mathrm{K}$であった。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./data/定容法.png}
+    \caption{定容法}
+    \label{fig:定容法}
+\end{figure}
+
+\section{結果}
+
+\subsection{SIFSIX-1-Cu粉末試料の合成}
+
+\subsubsection{粉末X線回折}
+
+\quad 粉末X線解析の結果を図\ref{fig:fxrd1}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/3.1/pxrd.png}
+    \caption{粉末試料の粉末X線回折}
+    \label{fig:fxrd1}
+\end{figure}
+
+\subsubsection{熱重量分析}
+
+\quad 熱重量分析の結果を図\ref{fig:tg}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/3.1/tg.png}
+    \caption{熱重量分析}
+    \label{fig:tg}
+\end{figure}
+
+\subsection{SIFSIX-1-Cuの単結晶試料の合成}
+
+\subsubsection{結晶写真}
+
+\quad 結晶写真を図\ref{fig:crystal1}, \ref{fig:crystal2}, \ref{fig:crystal3}に示す。紫色の四角形の結晶が見られた。目視では結晶が光を反射しているように見えた。
+
+% 結晶写真を3枚並べる
+\begin{figure}[htbp]
+    \begin{minipage}{0.33\hsize}
+        \centering
+        \includegraphics[width=0.9\textwidth]{./data/3.2/crystal1.png}
+        \caption{結晶写真1}
+        \label{fig:crystal1}
+    \end{minipage}
+    \begin{minipage}{0.33\hsize}
+        \centering
+        \includegraphics[width=0.9\textwidth]{./data/3.2/crystal2.png}
+        \caption{結晶写真2}
+        \label{fig:crystal2}
+    \end{minipage}
+    \begin{minipage}{0.33\hsize}
+        \centering
+        \includegraphics[width=0.9\textwidth]{./data/3.2/crystal3.png}
+        \caption{結晶写真3}
+        \label{fig:crystal3}
+    \end{minipage}
+\end{figure}
+
+\subsubsection{粉末X線回折}
+
+\quad 単結晶の粉末X線回折の結果を図\ref{fig:fxrd2}に、粉末試料の粉末X線回折との比較を図\ref{fig:fxrd3}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/3.2/pxrd.png}
+    \caption{単結晶試料の粉末X線回折}
+    \label{fig:fxrd2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/3.2/pxrd_compare.png}
+    \caption{単結晶試料の粉末X線回折}
+    \label{fig:fxrd3}
+\end{figure}
+
+\subsection{X線結晶構造解析}
+
+\subsubsection{Yadokari-XGによる構造解析}
+
+\quad Yadokari-XGによる構造解析の結果を表\ref{tab:構造解析}に示す。
+
+\begin{table}[htbp]
+    \centering
+    \caption{構造解析の結果}
+    \label{tab:構造解析}
+    \begin{tabular}{|c|c|} \hline
+        組成式 & \ce{C20H16CuF6N4Si} \\ \hline
+        式量 & 518.00 \\ \hline
+        晶系 & Tetragonal \\ \hline
+        空間群 & P4/nmm \\ \hline
+        格子定数 & a = 11.0933 \AA \\
+        & b = 11.0933 \AA \\
+        & c = 7.9914 \AA \\ \hline
+        Z値 & Z = 1 \\ \hline
+        格子体積 & 984.50 \AA$^3$ \\ \hline
+        R値 & $R_1 = 0.1045$ \\
+        & $wR_2 = 0.3582$ \\ \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{VESTAによるシミュレーション}
+
+\quad SIFSIX-1-Cuのシミュレーションパターンを図\ref{fig:シミュレーション}に、単結晶の実測した回折パターンとの比較を図\ref{fig:シミュレーション2}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/3.3/シミュレーション.png}
+    \caption{SIFSIX-1-Cuのシミュレーションパターン}
+    \label{fig:シミュレーション}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{./data/3.3/シミュレーション2.png}
+    \caption{SIFSIX-1-Cuのシミュレーションパターンと実測した回折パターンの比較}
+    \label{fig:シミュレーション2}
+\end{figure}
+
+\subsubsection{SIFSIX-1-Znの回折パターン}
+
+\quad SIFSIX-1-Znの回折パターンを図\ref{fig:回折パターン}に示す。d値はブラッグの式(式(1))と$2\theta$の関係から求めた。また、格子定数はミラー指数が(2, 0, 0)のものと、(0, 0, 2)のものを用いて、正方晶のd値とミラー指数の関係(式(2))から求めた。また、ミラー指数については、求めた格子定数と正方晶のd値とミラー指数の関係から、ミラー指数が整数値となるものを考えて求めた。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/3.3/回折パターン.png}
+    \caption{SIFSIX-1-Znの回折パターン}
+    \label{fig:回折パターン}
+\end{figure}
+
+\begin{align}
+    ブラッグの式 : d = \frac{\lambda}{2\sin\theta}
+\end{align}
+
+\begin{align}
+    正方晶のd値とミラー指数の関係 : \frac{1}{d^2} = \frac{h^2 + k^2}{a^2} + \frac{l^2}{c^2}
+\end{align}
+
+
+
+\subsection{ガス吸着測定}
+
+\subsubsection{吸着量の測定}
+
+ガス導入前の状態方程式と、導入後の状態方程式を示すと以下の様になる。
+
+\begin{align}
+    ガス導入前の状態方程式 &: P_0V_s = n_1RT \\
+    ガス導入後の状態方程式 &: P_1(V_s+V_d) = n_2RT
+\end{align}
+
+ヘリウムガスを導入した際、吸着量を0とみなせることから、以下の様にして$V_d$を求めることができる。
+
+\begin{align}
+    (吸着ガス量) = n_1 - n_2 &= \frac{P_0V_s-P_1(V_s+V_d)}{RT} = 0 \\
+    V_d &= 7.53\mathrm{mL}
+\end{align}
+
+\ce{CO2}を導入した場合の吸着量を求めると以下の様になる。
+
+\begin{align}
+    (吸着ガス量) &= n_1 - n_2 \\
+    &= \frac{P_0V_s-P_1(V_s+V_d)}{RT} \\
+    &= 8.96 \times 10^{-6} \mathrm{mol}
+\end{align}
+
+結果から、吸着率を求めると以下のようになる。
+
+\begin{align}
+    吸着率N &= \frac{8.96 \times 10^{-6} \mathrm{mol} \times 22.4\mathrm{L/mol}}{0.309\mathrm{g}} \\
+    &= 0.65\mathrm{mL/g}
+\end{align}
+
+\subsubsection{SIFSIX-1-Cu及びSIFSIX-3-Cuの細孔径の測定}
+
+\quad VESTAを用いて、SIFSIX-1-Cu及びSIFSIX-3-Cuの細孔径を測定したところ、SIFSIX-1-Cuは5.36\AA , SIFSIX-3-Cuは3.54\AA であった。\ce{CO2}の大きさは縦3.19\AA , 横5.36\AA, 高さ3.34\AA であるため、どちらも吸着が可能であり、SIFSIX-3-Cuの方が強い吸着を示すと考えられる。
+
+\subsubsection{SIFSIX-1-Cuの吸着等温線}
+
+\quad 図\ref{fig:吸着等温線}に、SIFSIX-1-Cuの吸着等温線を示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/3.4/吸着等温線.png}
+    \caption{SIFSIX-1-Cuの吸着等温線}
+    \label{fig:吸着等温線}
+\end{figure}
+
+
+\section{考察}
+
+\subsection{粉末と単結晶での粉末X線回折での結晶性の比較}
+
+\quad 図\ref{fig:fxrd3}より、粉末試料の粉末X線回折と単結晶試料の粉末X線回折を比較すると、一致するピークが複数見られるものの、単結晶試料の方がピークが鋭く、粉末試料の方がピークが広いことがわかる。粉末試料でのブロードのピークは、非晶質固体が多く含まれていることによるものと考えられる。また、図\ref{fig:fxrd1}, \ref{fig:fxrd2}より、単結晶試料の方が粉末試料よりもピークが鋭く、単結晶試料の方が結晶性が高いことが言える。単結晶試料と粉末試料で最大のピークの位置が一致していないことから、粉末試料では単結晶試料とは異なる構造を持つ結晶が多く含まれていたと考えられる。また、単結晶X線回折の測定温度は$-180\mathrm{^{\circ}C}$であり、粉末X線回折の測定温度は室温であった。熱膨張により格子定数が大きくなると、ブラッグの式(1)より、2$\theta$が小さくなる。したがって、室温で測定した粉末試料の方では、ピークの出現位置が2$\theta$が小さい方向にずれていると言える。最大のピークの位置が一致していないのは、異なる構造を持つ結晶が多く含まれていたか、格子定数の変化によるものかは現状の実験データではわからないため、同じ温度で測定を行う必要がある。
+
+\subsection{シミュレーションと単結晶での回折パターンの比較}
+
+\quad 図\ref{fig:シミュレーション2}より、単結晶とシミュレーションの回折パターンでは、ピークの強度が異なっていることが読み取れる。特に、単結晶で一番大きいピークと、シミュレーションで一番大きいピークが異なっている。X線結晶構造解析では、結晶中の原子が周期的に配列した格子面が等間隔に並んでいることを利用して、光を照射してBragg反射の出現する回折各から単位格子を求める手法であり、結晶中の原子位置によって回折強度は変わる。特にシミュレーションでは理想的な条件下での計算が行われるため、実際の結晶成長や結晶の欠陥などが考慮されていないことから、特定の面からの回折が強くなり相対強度が実測値と異なると考えられる。\cite{1}ピークの位置に関しては単結晶とシミュレーションでほとんど一致していることが読み取れるため、他の結晶が含まれていることによるピークのずれではなく、格子定数の変化によるものと考えられる。
+% https://www.jstage.jst.go.jp/article/jsms/54/6/54_6_601/_pdf
+% \quad より実測値に近いシミュレーションをするために、より高度な解析手法や補正が必要である。
+% TODO: https://www.jstage.jst.go.jp/article/jcrsj/62/1/62_51/_pdf
+
+
+\subsection{熱重量分析}
+
+\quad 図\ref{fig:tg}より、$100\mathrm{^{\circ}C}$での10\%程度の減少、$200\mathrm{^{\circ}C}$付近での50\%程度の重量減少と、$300\mathrm{^{\circ}C}$付近での35\%程度の重量減少が見られる。重量減少では蒸発や燃焼なども考えられるが、金属である\ce{Cu}を含む単結晶であるため、重量減少は熱分解によるものであるとして考える。SIFSIX-1-Cuでは、\ce{Cu}1分子に対して、ビピリジン2分子、\ce{SiF6}1分子が含まれている。それぞれの分子量は、ビピリジンが156.18、\ce{SiF6}が142.09である。全ての重量減少をビピリジンと\ce{SiF6}に由来するものとして考える。ビピリジン2分子と\ce{SiF6}の分子量の和は454.45であることから、35\%程度の減少は$156/454 = 0.343$より、ビピリジン1分子が分解したことによるものと考えられる。同様にして、10\%程度の減少は\ce{SiF6}に由来する\ce{F2}が分解したことによるもの、50\%程度の減少は、ビピリジン1分子と\ce{SiF4}が分解したことによるものと考えられる。
+
+\quad 今回は熱重量分析のみを行っており、重量減少が何の反応によるものかは完全には明らかではない。示唆熱分析を行うことで、反応による熱の出入りを確認することができるため、より明確に何の反応が起こったのかを推定することが可能である。
+
+\quad また、今回の実験データでは重量の減少量が100\%を超えており、正確なデータとは言えない。特に、\ce{Cu}は固体として残ると考えられるため、実際には重量減少は85\%程度で止まると考えられる。重量の測定が正確に行えていないと考えられるため、今回の熱重量分析は測定し直す必要があると言える。
+
+\subsection{SIFSIX-1-CuとSIFSIX-1-Znの比較}
+
+\quad 結果3.3.1より、SIFSIX-1-Cuの格子定数は$a=11.0933$\AA, $c=7.9914$\AA であった。また、結果3.3.3より、SIFSIX-1-Znの格子定数は$a=11.396$\AA, $c=7.678$\AA であった。単純に原子半径だけで格子定数が変化するのであれば、原子番号の大きい\ce{Zn}の方が格子定数が大きくなると考えられるが、格子定数cではSIFSIX-1-Cuの方が大きくなっている。これは、ヤーンテラー効果によるものと考えられる。\ce{Cu2+}イオンは$d^9$電子を持っており、電子配置は$(t_{2g})^6(e_g)^3$である。$e_g$軌道の1つが2個の電子を、もう一つが1個の電子を含んでいる。$e_g$軌道は周囲の配位子の方向を向いているので、$t_{2g}$軌道より高いエネルギーを持つ。そして、$e_g$軌道のうち2個の電子に占有された軌道の方がより強い反発力を受けるため、1個の電子に占有された軌道よりも高いエネルギーを持つ。このため、2電子に占有された軌道の方向に、金属-配位子の結合が長くなる。この効果によって、SIFSIX-1-Cuの格子定数cが大きくなっていると考えられる。\cite{2}\cite{3}
+
+\subsection{吸着等温線の解釈}
+
+\quad 結果3.4.2でも述べた様に、SIFSIX-1-CuとSIFSIX-3-Cuのどちらも細孔径が\ce{CO2}分子よりも大きいため、吸着が可能であると考えられる。この場合、より細孔径が小さいSIFSIX-3-Cuの方が強い吸着を示すと考えられる。したがって、吸着等温曲線では、SIFSIX-3-Cuが、SIFSIX-1-Cuに比べて低圧領域でも吸着量が多くなると予想した。
+
+\quad 報告されているSIFSIX-3-Cuの吸着等温線を図\ref{fig:吸着等温線2}に示す。図\ref{fig:吸着等温線2}より、SIFSIX-3-Cuの吸着等温線は、SIFSIX-1-Cuの吸着等温線よりも低圧領域での吸着量が多くなっていることが読み取れ、予想と一致していることがわかる。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/4/吸着等温線.png}
+    \caption{SIFSIX-3-Cuの吸着等温線\cite{3}}
+    \label{fig:吸着等温線2}
+\end{figure}
+
+\quad また、\ce{CO2}の最大長は5.36\AA であるため、さまざまな向きで\ce{CO2}が吸着することができるSIFSIX-1-Cuの方がより吸着を示すのではないかとも考えられるが、実際にはSIFSIX-3-Cuの方の吸着量が大きくなっている。これは、分子の細孔への入りやすさよりも、吸着した分子との相互作用の大きさの方が吸着量に影響を与えていると考えられる。
+
+\begin{thebibliography}{99}
+    \bibitem{1} X線回折と回折パターンシミュレーションによるNi-Ti形状記憶合金の結晶学的検討, \url{https://www.jstage.jst.go.jp/article/jsms/54/6/54_6_601/_pdf}
+    \bibitem{2} ウエスト固体化学, 第3章, 講談社
+    \bibitem{3} Investigating CO2 Sorption in SIFSIX-3‐M (M = Fe, Co, Ni, Cu, Zn) through Computational Studies, \url{https://pubs.acs.org/doi/10.1021/acs.cgd.9b00086}
+\end{thebibliography}
+
+\end{document} 
