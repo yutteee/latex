@@ -18,7 +18,7 @@
     
     \vspace{100pt}
     
-    \huge{層状物質からのナノシートの合成と評価}
+    \huge{色素増感太陽電池の作成と評価}
 }
 
 \vfill
@@ -32,32 +32,242 @@
 
         \vspace{30pt}
     
-        \Large{\underline{実施日 : 2023/12/5, 12/6, 12/7}}
+        \Large{\underline{実施日 : 11/29, 11/30, 12/1}}
         
 \end{flushright}
 
 \newpage
 
-\section{諸言}
-\section{実験}
+\section{前半 酸化チタンを利用した色素増感太陽電池の作成と評価}
 
-\subsection{酸化物ナノシートの合成及び分析}
+\subsection{目的}
 
-\subsubsection{層状酸化物(セラミックス)の合成}
+\quad 半導体である酸化チタンと、色素としてエオシンY, メチレンブルーを用いて色素増感太陽電池を作成し、その特性を評価する。
 
-\quad 本実験では、\ce{K_{0.8}Ti_{1.6}Co_{0.4}O4}を目的の層状酸化物としている。\ce{CoO}を$0.461\mathrm{g}$、\ce{TiO2}を$1.96\mathrm{g}$、\ce{K2CO3}を$0.902\mathrm{g}$採取し、乳鉢を使って混合し、30分間粉砕した。粉砕した粉末をアルミナるつぼに入れ、粉砕し終わった粉末を1000度20時間焼成した。
+\subsection{操作}
 
-\subsection{グラフェンの合成、分析及び特性評価}
+\subsubsection{色素担持多孔質半導体薄膜電極の作製}
 
-\quad 層状物質をオーブンから取り出し、めのう乳鉢で粉砕した。また、35\%塩酸を用いて$1\mathrm{M}$塩酸を$1\mathrm{L}$調整した。そのと、$250\mathrm{mL}$三角フラスコに$150\mathrm{mL}$の$1\mathrm{M}$\ce{HCl}溶液及び$1.5\mathrm{g}$の層状酸化物を入れてシェイカーで$100\mathrm{rpm}$で1日震盪した。
+% \quad 1.5 wt\%のエチルセルロースを溶解したエタノール$5\mathrm{cm^3}$と酸化チタン$1.5\mathrm{g}$を乳鉢で混合した。そこに全量$10\mathrm{cm^3}$の$\alpha$-テルピネオールを少量ずつ加えながら、乳鉢で混錬する。全て加え、均一なペーストとなるまで、30分程度混錬した。
 
-\section{実験結果}
-\section{考察}
-\section{課題}
-\section{結論}
-\section{感想}
+\quad アセトン中で10分間超音波洗浄した導電性ガラスの導電面を上にして四辺をセロハンテープでマスクする。調整した半導体粒子ペーストを端に乗せ、ガラス棒で均一になる様に塗布した。テープを剥がし、ホットプレートで乾燥した後、電気炉に入れ、$450\mathrm{^{\circ}C}$で15分間焼成した。同様の方法で薄膜基盤を6枚作成した。
+
+\quad メチレンブルー$0.075\mathrm{g}$, エオシンY$0.14\mathrm{g}$を量りとり、それぞれエタノール$20\mathrm{mL}$に混合し、濃度$10\mathrm{mmol dm^{-3}}$の色素溶液を2つ調整した。調整した色素溶液に、薄膜基盤をそれぞれ2枚ずつ30分程度浸漬した。溶液から薄膜を取り出してエタノールで膜をすすぎ乾燥させた。
+
+\subsubsection{太陽電池の組み立て}
+
+\quad 中央に小さく穴が空いた導電性ガラスに、導電面全体を鉛筆で擦り、塗りつぶした。鉛筆に含まれるグラファイト粉末を付着させることで、ヨウ素の還元に対する過電圧を減少させる触媒としての役割をする。この基盤を6枚作成した。
+
+
+\quad 色素複合半導体薄膜が形成された面と対極の導電面を向かい合わせにして、間にスペーサーとなる熱融着フィルム(ハイミラン)を挟んだ。120度に加熱したホットプレート上で融着させて固定した。エオシンYを用いた電極を2枚、メチレンブルーを用いた電極を2枚、色素なしの電極を2枚作成した。
+
+\quad $0.5\mathrm{mol dm^{-3}}$のヨウ化カリウムと$0.05\mathrm{mol dm^{-3}}$のヨウ素を含むアセトニトリル溶液を調整する。2つの電極の間にできた隙間に、対極にある穴から低圧条件下におくことで注入をした。電解液が満たされたら、穴を樹脂で埋めた。
+
+\subsubsection{太陽電池の評価}
+
+\quad キセノンランプを光源に用いて、作成した太陽電池の電流-電位特性を測定した。
+
+\subsection{結果}
+
+\subsubsection{電流-電圧特性の測定}
+\quad エオシンY、メチレンブルー、色素なしの太陽電池の電流-電圧特性の測定結果をそれぞれ図\ref{fig:JV1}, \ref{fig:JV2}, \ref{fig:JV3}に示す。
+
+% 写真を横に2つ、縦に1つ並べる
+\begin{figure}[htbp]
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=70mm]{./data/1/JV1.png}
+        \end{center}
+        \caption{エオシンYを用いた太陽電池の電流-電圧特性}
+        \label{fig:JV1}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=70mm]{./data/1/JV2.png}
+        \end{center}
+        \caption{メチレンブルーを用いた太陽電池の電流-電圧特性}
+        \label{fig:JV2}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=70mm]{./data/1/JV3.png}
+    \end{center}
+    \caption{色素なしの太陽電池の電流-電圧特性}
+    \label{fig:JV3}
+\end{figure}
+
+\quad この結果から、それぞれの太陽電池の変換効率を求めた結果を表\ref{tab:efficiency}に示す。
+
+\begin{table}[htbp]
+    \begin{center}
+        \caption{変換効率}
+        \label{tab:efficiency}
+        \begin{tabular}{|c|c|} \hline
+            色素 & 変換効率 \\ \hline
+            エオシンY & $3.2\times10^{-3}$\% \\ \hline
+            メチレンブルー & $5.0\times10^{-5}$\% \\ \hline
+            色素なし & $4.1\times10^{-5}$\% \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\subsubsection{光電流の作⽤スペクトル}
+
+\quad エオシンY、メチレンブルー、色素なしの太陽電池のそれぞれの量子収率IPCEのグラフを図\ref{fig:IPCE}に示す。
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=70mm]{./data/1/IPCE.png}
+    \end{center}
+    \caption{光電流の作⽤スペクトル}
+    \label{fig:IPCE}
+\end{figure}
+
+
+\subsection{考察}
+
+\subsubsection{エオシンY}
+
+\quad 結果1.3.1の太陽電池の変換効率より、エオシンYを用いた太陽電池では、他の作成した電池に比べて電池性能が高かったと言える。また、結果1.3.2のIPCEグラフにより、エオシンYを用いた太陽電池では、$500\mathrm{nm}$付近での光電流の作用スペクトルが高いことが読み取れる。エオシンYの極大吸収波長は$514\mathrm{nm}$であり\cite{1}、この波長付近での光電流の作用スペクトルが高いことから、エオシンYの色素分子の電子励起による電流発生が起こっていることが読み取れる。
+% https://www.chemicalbook.com/ChemicalProductProperty_JP_CB9461211.htm
+
+\quad より電池性能を上げるには以下の様な方法が考えられる。
+
+\begin{enumerate}
+    \item 色素の吸着量を上げる
+    
+    \quad 色素の吸着量を上げることで、より多くの色素分子の電子励起が起こり、半導体への電子の供給が増えるため、電池性能が上がると考えられる。本実験では30分の浸漬時間であったが、これを長くすることで、より多くの色素分子が吸着すると考えられる。
+    \item 対極をより電気伝導性の高いものにする
+    
+    \quad 本実験では対極に鉛筆に含まれるグラファイト粉末を用いたが、これをより電気伝導性の高いものにすることで、よりヨウ素に対して電子を渡しやすくなり、電池性能が上がると考えられる。
+    \item 電解液の濃度を上げる
+    
+    \quad 本実験では電解液の濃度を$0.5\mathrm{mol dm^{-3}}$としたが、これを上げることで、よりヨウ素の還元が起こりやすくなり、電池性能が上がると考えられる。
+\end{enumerate}
+
+\subsubsection{メチレンブルー}
+
+\quad 結果1.3.1の太陽電池の変換効率より、メチレンブルーを用いた太陽電池では、ブランクと同様にほとんど電気が流れていないことが読み取れる。また、結果1.3.2のIPCEグラフから、メチレンブルーを用いた太陽電池では光吸収による作用スペクトルが確認できない。メチレンブルーの極大吸収波長は$668, 609\mathrm{nm}$である\cite{2}ため、この波長付近で作用スペクトルが確認できると予想されるが、実際には確認できなかった。これは、メチレンブルーのLUMOのエネルギー準位が酸化チタンの伝導帯のエネルギー準位よりも低いため、電子が伝導帯に供給されないためであると考えられる。
+% https://www.chemicalbook.com/ChemicalProductProperty_JP_CB3748860.htm
+
+\quad この電池を改善するには、LUMOのエネルギー準位が高い色素を用いる、または伝導帯のエネルギー準位が低い半導体を用いることが必要と考えられる。
+
+\section{後半 酸化スズを利用した色素増感太陽電池の作成と評価}
+
+\subsection{目的}
+
+\quad 上記の実験で行った、酸化チタンを利用した色素増感太陽電池の作成と評価では、メチレンブルーを用いた場合はほとんど電気が流れなかった。これは、メチレンブルーのLUMOのエネルギー準位が酸化チタンの伝導帯のエネルギー準位よりも低いため、電子が伝導帯に供給されないためであると考えられる。そこで、伝導帯のエネルギー順位が低い酸化スズを用いた色素増感太陽電池を作成し、その特性を評価することを目的とする。
+
+\subsection{操作}
+
+\subsubsection{色素担持多孔質半導体薄膜電極の作製}
+
+% \quad 1.5 wt\%のエチルセルロースを溶解したエタノール$5\mathrm{cm^3}$と酸化チタン$1.5\mathrm{g}$を乳鉢で混合した。そこに全量$10\mathrm{cm^3}$の$\alpha$-テルピネオールを少量ずつ加えながら、乳鉢で混錬する。全て加え、均一なペーストとなるまで、30分程度混錬した。
+
+\quad アセトン中で10分間超音波洗浄した導電性ガラスの導電面を上にして四辺をセロハンテープでマスクする。調整した酸化チタン粒子ペーストを端に乗せ、ガラス棒で均一になる様に塗布した。テープを剥がし、ホットプレートで乾燥した後、電気炉に入れ、$450\mathrm{^{\circ}C}$で15分間焼成した。同様の方法で薄膜基盤を3枚作成した。
+
+\quad 前半の実験で調整した色素溶液に、薄膜基盤をそれぞれ2枚ずつ30分程度浸漬した。溶液から薄膜を取り出してエタノールで膜をすすぎ乾燥させた。
+
+\subsubsection{太陽電池の組み立て}
+
+\quad 中央に小さく穴が空いた導電性ガラスに、導電面全体を鉛筆で擦り、塗りつぶした。鉛筆に含まれるグラファイト粉末を付着させることで、ヨウ素の還元に対する過電圧を減少させる触媒としての役割をする。この基盤を3枚作成した。
+
+
+\quad 色素複合半導体薄膜が形成された面と対極の導電面を向かい合わせにして、間にスペーサーとなる熱融着フィルム(ハイミラン)を挟んだ。120度に加熱したホットプレート上で融着させて固定した。エオシンYを用いた電極を1枚、メチレンブルーを用いた電極を1枚、色素なしの電極を1枚作成した。
+
+\quad 実験1で調整した電解液で電池を満たした。電解液が満たされたら、穴を樹脂で埋めた。
+
+\subsubsection{太陽電池の評価}
+
+\quad キセノンランプを光源に用いて、作成した太陽電池の電流-電位特性を測定した。
+
+\subsection{結果}
+
+\subsubsection{色素吸着}
+
+\quad 酸化スズを用いた色素増感太陽電池の色素吸着の様子を図\ref{fig:adsorption}に示す。上半分が酸化チタンを用いた時の色素吸着の様子であり、下半分が酸化スズを用いた時の色素吸着の様子である。
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=70mm]{./data/2/adsorption.png}
+    \end{center}
+    \caption{色素吸着}
+    \label{fig:adsorption}
+\end{figure}
+
+\subsubsection{電流-電圧特性の測定}
+
+\quad エオシンY、メチレンブルー、色素なしの太陽電池の電流-電圧特性の測定結果をそれぞれ図\ref{fig:JV4}, \ref{fig:JV5}, \ref{fig:JV6}に示す。
+
+% 写真を横に2つ、縦に1つ並べる
+\begin{figure}[htbp]
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=70mm]{./data/2/JV4.png}
+        \end{center}
+        \caption{エオシンYを用いた太陽電池の電流-電圧特性}
+        \label{fig:JV4}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=70mm]{./data/2/JV5.png}
+        \end{center}
+        \caption{メチレンブルーを用いた太陽電池の電流-電圧特性}
+        \label{fig:JV5}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=70mm]{./data/2/JV6.png}
+    \end{center}
+    \caption{色素なしの太陽電池の電流-電圧特性}
+    \label{fig:JV6}
+\end{figure}
+
+\quad この結果から、それぞれの太陽電池の変換効率を求めた結果を表\ref{tab:efficiency2}に示す。
+
+\begin{table}[htbp]
+    \begin{center}
+        \caption{変換効率}
+        \label{tab:efficiency2}
+        \begin{tabular}{|c|c|} \hline
+            色素 & 変換効率 \\ \hline
+            エオシンY & $8.1\times10^{-3}$\% \\ \hline
+            メチレンブルー & $2.4\times10^{-3}$\% \\ \hline
+            色素なし & $4.7\times10^{-4}$\% \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\subsubsection{光電流の作⽤スペクトル}
+
+\quad エオシンY、メチレンブルー、色素なしの太陽電池のそれぞれの量子収率IPCEのグラフを図\ref{fig:IPCE2}に示す。
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=70mm]{./data/2/IPCE.png}
+    \end{center}
+    \caption{光電流の作⽤スペクトル}
+    \label{fig:IPCE2}
+\end{figure}
+
+\subsection{考察}
+
+\quad 結果2.3.2より、メチレンブルーの変換効率が酸化チタンを用いた時に比べて上がっていることが読み取れる。また、結果2.3.3のIPCEグラフから、メチレンブルーを用いた太陽電池では$640\mathrm{nm}$付近で作用スペクトルが大きくなっており、これはメチレンブルーの極大吸収波長に近い。したがって、伝導体のエネルギー準位が低い酸化スズを用いたことで、メチレンブルーの電子励起による電流発生を起こすことができたと言える。
+
+\quad エオシンYを用いた時とメチレンブルーを用いたときでは、エオシンYを用いた時の方が変換効率が高い。メチレンブルーに比べてエオシンYの方がLUMOのエネルギー準位が高いため、相対的に伝導体がより安定なエネルギー準位となり、電子が伝導帯に供給されやすくなると考えられる。そのため、より性能のよい太陽電池を作るためには、伝導帯のエネルギー準位が低い半導体と、LUMOのエネルギー準位が高い色素を用いることが必要であると考えられる。
+
+\quad 酸化チタンを用いた場合と酸化スズを用いた場合では、酸化スズを用いた場合の方が変換効率が高い。これは、酸化スズの方が伝導帯のエネルギー準位が低いため、電子が伝導帯に供給されやすくなるためであると考えられる。また、色素の吸着度合いによって差がでたことも考えられる。より色素が吸着している方が半導体に電子を渡しやす区なるためである。図\ref{fig:adsorption}では酸化チタンと酸化スズ自体の色が異なるため、見た目では色素の吸着度合いを判断することが難しい。色素吸着度合いを評価するために、吸着条件を変えて実験を行うことが必要であると考えられる。吸着現象は吸着剤と吸着質の間のエネルギー相互作用であり、濃度、温度などによって変化する。\cite{3}これらの条件を変えて吸着量を増やすことで、より性能のよい太陽電池を作ることができると考えられる。
+% https://www.jstage.jst.go.jp/article/oleoscience/2/5/2_275/_pdf
+
+
 \begin{thebibliography}{99}
-    % \bibitem{1} hogehoge \url{https://www.google.com/}
+    \bibitem{1} エオシン, Chemical Book, \url{https://www.chemicalbook.com/ChemicalProductProperty_JP_CB9461211.htm}
+    \bibitem{2} メチレンブルー, Chemical Book, \url{https://www.chemicalbook.com/ChemicalProductProperty_JP_CB3748860.htm}
+    \bibitem{3} 吸着の化学, 阿部 郁夫, 大阪市立工業研究所, \url{https://www.jstage.jst.go.jp/article/oleoscience/2/5/2_275/_pdf}
 \end{thebibliography}
 
 \end{document} 
