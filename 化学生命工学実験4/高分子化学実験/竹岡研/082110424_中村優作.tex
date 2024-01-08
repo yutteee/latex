@@ -1,0 +1,193 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+\flushleft{
+    \huge{令和5年度 化学生命工学実験4}
+    
+    \vspace{100pt}
+    
+    \huge{固体材料の表面張力の制御とその評価}
+}
+
+\vfill
+\begin{flushright}
+
+        \Large{\underline{学籍番号 : 082110424}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{氏名 : 中村優作}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{実施日 : 2023/12/19}}
+        
+\end{flushright}
+
+\newpage
+
+\section{目的}
+
+\quad 固体表面上の接触角を測定することによって、液体と固体の凝集力、濡れ性などを知ることができる。本実験では、シリコン基盤、テフロン基盤、HMDSを被膜したシリコン基盤、UV-\ce{O3}処理をしたシリコン基盤の4種類の基盤について接触角を測定し、それぞれの臨界表面張力を比較し、考察することを目的とする。
+
+\section{操作}
+
+\quad 質量パーセント濃度が、0, 10, 20, 40, 60, 80, 100の7種類のメタノール水溶液を用意した。シリコン基盤、テフロン基盤、HMDSを被膜したシリコン基盤、UV-\ce{O3}処理をしたシリコン基盤の4種類の基盤について、それぞれの基盤にメタノール水溶液を滴下し、その接触角を測定した。測定はそれぞれの溶液に対して3回行った。UV-\ce{O3}処理をしたシリコン基盤では水滴が広がったため、測定は行なっていない。
+
+\section{結果}
+
+\quad 表\ref{table:1}, \ref{table:2}, \ref{table:3}に、シリコン基盤、テフロン基盤、HMDSを被膜したシリコン基盤についての接触角$\theta$の$\cos\theta$の測定結果を示す。UV-\ce{O3}処理をしたシリコン基盤に関しては、接触角が$0\mathrm{^{\circ}}$であったため全ての質量パーセント濃度において$\cos\theta=1.0$となった。
+
+\begin{table}[htb]
+    \centering
+    \caption{シリコン基盤についての接触角$\theta$の$\cos\theta$の測定結果}
+    \label{table:1}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+        質量\%濃度 & 0\% & 10\% & 20\% & 40\% & 60\% & 80\% & 100\% \\\hline
+        $\cos\theta$(1回目) & 0.55 & 0.46 & 0.49 & 0.76 & 0.78 & 0.96 & 1.0 \\ \hline
+        $\cos\theta$(2回目) & 0.51 & 0.53 & 0.60 & 0.72 & 0.76 & 0.96 & 1.0 \\ \hline
+        $\cos\theta$(3回目) & 0.51 & 0.55 & 0.59 & 0.65 & 0.70 & 0.95 & 1.0 \\ \hline
+        $\cos\theta$(平均) & 0.52 & 0.51 & 0.56 & 0.71 & 0.75 & 0.96 & 1.0 \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[htb]
+    \centering
+    \caption{テフロン基盤についての接触角$\theta$の$\cos\theta$の測定結果}
+    \label{table:2}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+        質量\%濃度 & 0\% & 10\% & 20\% & 40\% & 60\% & 80\% & 100\% \\\hline
+        $\cos\theta$(1回目) & -0.24 & -0.27 & -0.13 & 0.21 & 0.29 & 0.36 & 0.62 \\ \hline
+        $\cos\theta$(2回目) & -0.23 & -0.24 & -0.18 & 0.090 & 0.18 & 0.27 & 0.59 \\ \hline
+        $\cos\theta$(3回目) & -0.28 & -0.16 & -0.11 & 0.12 & 0.12 & 0.37 & 0.56 \\ \hline
+        $\cos\theta$(平均) & -0.25 & -0.23 & -0.14 & 0.14 & 0.20 & 0.37 & 0.59 \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[htb]
+    \centering
+    \caption{HMDSを被膜したシリコン基盤についての接触角$\theta$の$\cos\theta$の測定結果}
+    \label{table:3}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+        質量\%濃度 & 0\% & 10\% & 20\% & 40\% & 60\% & 80\% & 100\% \\\hline
+        $\cos\theta$(1回目) & -0.098 & 0.029 & 0.11 & 0.30 & 0.43 & 0.54 & 0.94 \\ \hline
+        $\cos\theta$(2回目) & -0.22 & -0.028 & 0.21 & 0.30 & 0.44 & 0.61 & 0.93 \\ \hline
+        $\cos\theta$(3回目) & -0.21 & 0.014 & 0.13 & 0.30 & 0.42 & 0.59 & 0.98 \\ \hline
+        $\cos\theta$(平均) & -0.17 & 0.0048 & 0.15 & 0.30 & 0.43 & 0.58 & 0.95 \\ \hline
+    \end{tabular}
+\end{table}
+
+\quad また、上記の結果から作成したZismanプロットを図\ref{fig:1}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/plot.jpg}
+    \caption{Zismanプロット。上から順に、シリコン基盤、テフロン基盤、HMDSを被膜したシリコン基盤のグラフ。}
+    \label{fig:1}
+\end{figure}
+
+\quad また、Zismanプロットから推定した臨界表面張力を表\ref{table:4}に示す。
+
+\begin{table}[htb]
+    \centering
+    \caption{Zismanプロットから推定した臨界表面張力}
+    \label{table:4}
+    \begin{tabular}{|c|c|c|c|} \hline
+        基盤 & シリコン基盤 & テフロン基盤 & HMDSを被膜したシリコン基盤 \\\hline
+        臨界表面張力 (mN/m) & 23.0 & 21.5 & 18.5 \\ \hline
+    \end{tabular}
+\end{table}
+
+
+\section{考察}
+
+% 実験で求めた測定内を理論値と比較してみよう。
+\subsection{測定値と理論値の比較}
+
+\quad シリコン、テフロンの臨界表面張力の文献値を表\ref{table:5}に示す。測定値と比較するとおおよそ一致していることが言える。基盤の表面粗さが臨界表面張力に影響を与えるため、基盤の表面粗さが異なると文献値と測定値が異なることがあると考えられる。より正確な測定をするためには、実際の面積を考慮した補正が必要である。\cite{1}また、HMDSを被膜したシリコンの文献値を見つけることはできなかったが、\ce{SiO2}に対してHMDSを皮膜した場合、臨界表面張力は小さくなり、疎水性が上がることが知られている。\cite{2}今回の実験結果も、HMDSを被膜したシリコン基盤の臨界表面張力が小さくなっていることから、妥当な結果であると考えられる。また、考察4.4で述べるように、UV-\ce{O3}処理をしたシリコン基盤は酸化皮膜の形成により親水性が上がるため、実験結果は妥当であると考えられる。
+
+\begin{table}[htb]
+    \centering
+    \caption{シリコン、テフロンの臨界表面張力の文献値\cite{3}, \cite{4}}
+    \label{table:5}
+    \begin{tabular}{|c|c|c|} \hline
+        基盤 & シリコン基盤 & テフロン基盤 \\\hline
+        臨界表面張力 (mN/m) & 24 & 20.2 \\ \hline
+    \end{tabular}
+\end{table}
+
+% テフロン基盤とSi基板の結果を比較してみよう。どんな基盤がぬれやすく、どんな基盤が弾きやすい？
+\subsection{テフロン基盤とシリコン基盤の比較}
+
+\quad 固体表面の濡れ性は材料の表面エネルギーと表面の粗さによって決まる。テフロン中のC-F結合の分極率は小さく、表面エネルギーは小さくなっている。これは、フッ素原子の原子殻と電子の相互作用が強いことに起因するものであり、分極率が小さくなることで分子の間に働く力が小さくなり、表面エネルギーが小さくなる。\cite{5}そのため、シリコンに比べてテフロンの表面エネルギーは小さくなっている。
+
+% HMDSの厚みってどれくらい？構造式を用いて基盤表面の漫画を描いてみよう。
+
+\subsection{HMDSを被膜したシリコン基盤}
+
+\quad HMDSは、シリコン基盤の表面の\ce{OH}と反応し、表面を疎水性にする働きがある。本実験でも、HMDSを被膜したシリコン基盤の臨界表面張力は、シリコン基盤の臨界表面張力よりも小さくなっている。これは、HMDSによって表面の\ce{OH}が取り除かれ、表面の疎水性が上がったためであると考えられる。
+
+\quad HMDS処理の模式図を\ref{fig:2}に示す。HMDSの厚みは、\ce{O}, \ce{Si}, \ce{C}, \ce{H}の原子半径と結合長を考慮して、およそ$1.5\mathrm{nm}$と考えられる。グラフェン表面上のHMDSの厚さの文献値は$1.3〜1.8\mathrm{nm}$である。\cite{6}本実験で用いたHMDSの厚さを測るには、AFMなどの測定装置を用いる必要がある。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/HMDS.png}
+    \caption{HMDS処理の模式図\cite{7}}
+    \label{fig:2}
+\end{figure}
+
+% UV-O3処理で基盤はどう変化する？
+\subsection{UV-\ce{O3}処理をしたシリコン基盤}
+
+\quad UV-\ce{O3}処理の原理は、紫外線による有機化合物の分解と\ce{O3}の生成及び分解の過程における強力な酸化作用により有機化合物が揮発性の物質に変化して汚染表面により除去されるものである。\cite{8}シリコンにUV-\ce{O3}処理を施した場合、表面が酸化されて\ce{SiO2}が生成される。そのため、UV-\ce{O3}処理をしたシリコン基盤は親水性を示すようになり、水滴が広がったと考えられる。
+
+
+\section{設問/課題}
+
+\subsection{List the techniques for surface treatment (as many as you can), then list which technique is used for what effect.}
+
+\subsubsection{化学薬品処理}
+
+\quad 酸性の薬品や金属ナトリウムを配合した処理液等の化学薬剤を用いて表面を処理する手法。対象物表面に付着している異物や酸化膜など、性能を阻害する要因の除去や表層材を馴染みやすくするために使われる。\cite{9}
+
+\subsubsection{コロナ処理}
+
+\quad 電極に電圧をかけてコロナ放電させ、発生したプラズマを対象物に当てる手法。疎水性の表層を親水性の性質に変えたり、有機物を洗浄除去することができる。\cite{9}
+
+\subsubsection{紫外線処理}
+
+\quad 低圧水銀ランプより照射される$185\mathrm{nm}$波長、$254\mathrm{nm}$波長の紫外線を照射し、有機汚染物を分解すると同時に、紫外線により生成したオゾンと活性酸素により分解物を除去することができる。\cite{9}
+
+\subsubsection{フレーム処理}
+
+\quad 燃焼ガスと空気の混合ガスを燃やすことで空気中の酸素をプラズマ化させ、酸素プラズマを対象物に当てることで疎水性の表層を親水性に変えたり、有機物を洗浄除去することができる。\cite{9}
+
+\subsubsection{プラズマ処理}
+
+\quad 1対の電極に窒素や希ガスなどのガスを流し、高周波、高電圧を印加することによりプラズマを発生させ、活性化したガスを対象物に当てることで、疎水性の表層を親水性の性質に変えたり、有機物を洗浄除去することができる。\cite{9}
+
+\begin{thebibliography}{99}
+    \bibitem{1} 接触角(Contact Angle)測定, 高分子学会, \url{https://www.spsj.or.jp/equipment/news/news_detail_49.html}
+    \bibitem{2} 有機薄膜トランジスタにおける表面・界面の制御, 時任 静士・熊木 大介, \url{https://www.jstage.jst.go.jp/article/jsssj/28/5/28_5_242/_pdf/-char/ja}
+    \bibitem{3} Silicone Adhesion \& Bonding, Compo-SiL, \url{https://www.compo-sil.com/silicone-adhesion-bonding/}
+    \bibitem{4} Surface tension of polytetrafluoroethylene and its wetting by aqueous solution of some surfactants and their mixtures, \url{https://www.sciencedirect.com/science/article/abs/pii/S0169433216318888}
+    \bibitem{5} フッ素樹脂(テフロン)について, 中興化成, \url{https://www.chukoh.co.jp/teflon/}
+    \bibitem{6} Enhancing Structural Properties and Performance of Graphene-Based Devices Using Self-Assembled HMDS Monolayers, \url{https://pubs.acs.org/doi/epdf/10.1021/acsomega.0c05631}
+    \bibitem{7} レジストプロセスの基本, 佐々木 実, \url{https://arim.toyota-ti.ac.jp/pdf/facilities/03_resistprocess.pdf}
+    \bibitem{8} 紫外線-オゾンによる表面処理, \url{https://www.threebond.co.jp/technical/technicalnews/pdf/tech17.pdf}
+    \bibitem{9} 表面処理とは？表面処理の種類や選定方法について, エアウォーター, \url{https://site.awi.co.jp/product/plasma/single-second.html}
+\end{thebibliography}
+
+\end{document} 
