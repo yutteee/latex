@@ -1,0 +1,208 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+\flushleft{
+    \huge{令和5年度 化学生命工学実験4}
+    
+    \vspace{100pt}
+    
+    \huge{熱可塑性エラストマーの調製と特性評価}
+}
+
+\vfill
+\begin{flushright}
+
+        \Large{\underline{学籍番号 : 082110424}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{氏名 : 中村優作}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{実施日 : 2023/12/20, 12/22}}
+        
+\end{flushright}
+
+\newpage
+
+\section{Question 1}
+
+\subsection{SIS1の組成}
+
+\quad 図\ref{fig:nmr1}に、SIS1のNMRの結果を示す。$6.5〜7\mathrm{ppm}$付近のピークはベンゼン環のプロトンによるものであると考えられるため、スチレンに由来するものと言える。また、$5\mathrm{ppm}$のピークはアルケンのプロトンによるものであると考えられるため、イソプレンのアルケンに由来するものと言える。イソプレンの3,4-付加で生じるアルケンに結合している2つのプロトンが$4.683, 4.760\mathrm{ppm}$のピークに該当すると考えられ、1,4-付加で生じるアルケンに結合しているプロトンが$5.127\mathrm{ppm}$のピークに該当すると考えられる。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/nmr1.JPG}
+    \caption{SIS1のNMRの結果}
+    \label{fig:nmr1}
+\end{figure}
+
+\quad 積分比から、スチレン、1,4-付加のイソプレン、3,4-付加のイソプレンの存在比を考えると、$5.000/5 : 6.495/1 : 0.964/2 = 1 : 6.5 : 0.5$となる。これより、SIS1の組成は、スチレンが12.5\%, イソプレンが87.5\%であると考えられる。
+
+\subsection{SIS3の組成}
+
+\quad 図\ref{fig:nmr2}に、SIS3のNMRの結果を示す。SIS1の組成と同様に考える。スチレン、1,4-付加のイソプレン、3,4-付加のイソプレンの帰属はSIS1と同様である。積分比から、スチレン、1,4-付加のイソプレン、3,4-付加のイソプレンの存在比を考えると、$5.000/5 : 7.186/1 : 1.087/2 = 1 : 7.18 : 0.54$となる。これより、SIS3の組成は、スチレンが11.5\%, イソプレンが88.5\%であると考えられる。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/nmr2.JPG}
+    \caption{SIS3のNMRの結果}
+    \label{fig:nmr2}
+\end{figure}
+
+\section{Question 2}
+
+\quad 溶解性試験の結果を以下の表\ref{table:1}に示す。
+
+\begin{table}[htbp]
+    \caption{溶解性試験の結果 (+：溶解, -：不溶)}
+    \label{table:1}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+        & THF & アセトン & トルエン & ヘキサン & メタノール & クロロホルム & 水 \\ \hline
+        SIS & + & - & + & - & - & + & - \\ \hline
+        ポリスチレン & + & - & + & - & - & + & - \\ \hline
+        ポリイソプレン & + & - & + & - & - & + & - \\ \hline
+        スチレン & + & + & + & + & + & + & - \\ \hline
+        イソプレン & + & + & + & + & + & + & - \\ \hline
+    \end{tabular}
+\end{table}
+
+\section{Question 3}
+
+% 画像を貼って、SIS1とSIS3の数平均分子量はどれくらいかを書く。
+\quad GPC測定の結果を図\ref{fig:1}に示す。SIS1の数平均分子量は$2.14\times10^5$, SIS3の数平均分子量は$1.09\times10^5$, $2.14\times10^5$である。SIS3では、GPC測定の結果ピークが2つ現れた。これはジブロック共重合体の結合の反応が完全に進行せず、ジブロック共重合体が溶液中に残存したことによるものだと考えられる。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=15cm]{./data/q3.jpg}
+    \caption{GPC測定の結果}
+    \label{fig:1}
+\end{figure}
+
+\section{Question 4}
+
+\subsection{a.動的粘弾率測定の結果}
+
+\quad SIS1の動的粘弾率測定の結果を図\ref{fig:2}に示す。SIS3の動的粘弾率測定の結果を図\ref{fig:3}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/q4-1.png}
+    \caption{SIS1の動的粘弾率測定の結果}
+    \label{fig:2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/q4-2.png}
+    \caption{SIS3の動的粘弾率測定の結果}
+    \label{fig:3}
+\end{figure}
+
+\subsection{b.ゴム状平坦域弾性率$G_N$の読み取り}
+
+\quad ゴム状平坦域弾性率$G_N$は、$G''$が極小値をとる温度での$G_N$の値を読み取れば良いが、明確な極小値がグラフから読み取ることができなかった。$G''$の対数と温度の関係をプロットしたグラフを図\ref{fig:6}に示す。このグラフから、ゴム状平坦領域となる温度の範囲を読み取ったところ、SIS1では$20〜30\mathrm{^{\circ}C}$付近、SIS3では$20〜60\mathrm{^{\circ}C}$付近だと考えられる。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/q4-3.png}
+    \caption{$G''$の対数と温度の関係}
+    \label{fig:6}
+\end{figure}
+
+\quad 今回はゴム状平坦領域をとる温度の範囲での、$G'$の平均をとり、その値をゴム状平坦域弾性率$G_N$とした。この結果を表\ref{table:2}に示す。
+
+\begin{table}[htbp]
+    \caption{ゴム状平坦域弾性率$G_N$の値}
+    \label{table:2}
+    \centering
+    \begin{tabular}{|c|c|c|} \hline
+        & 温度 ($^{\circ}C$) & $G_N$ (MPa) \\ \hline
+        SIS1 & 20〜30 & 1.10 \\ \hline
+        SIS3 & 20〜60 & 0.591 \\ \hline
+    \end{tabular}
+\end{table}
+
+\quad 結果より、SIS1の方がSIS3よりもゴム状平坦領域での弾性率が高いことがわかる。これは、SIS3にはジブロック共重合体が不純物として含まれていることによるものだと考えられる。スチレンの両端にイソプレンが存在する状態では、\underline{流動性や伸縮性を示す}ことができるが、スチレンの片方だけイソプレンが存在するジブロック共重合体が不純物として含まれている状態では、それが達成されないためであると考えられる。
+
+\section{Question 5}
+
+\subsection{a. 引張試験の結果}
+
+\quad SIS1の引張試験の結果を図\ref{fig:4}に示す。SIS3の引張試験の結果を図\ref{fig:5}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/q5-1.png}
+    \caption{SIS1の引張試験の結果}
+    \label{fig:4}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./data/q5-2.png}
+    \caption{SIS3の引張試験の結果}
+    \label{fig:5}
+\end{figure}
+
+\subsection{b. ヤング率E, 破断伸び$\varepsilon_b$, 引張強度$\sigma_{max}$の読み取り}
+
+\quad ヤング率E, 破断伸び$\varepsilon_b$, 引張強度$\sigma_{max}$をデータから読み取った結果を表\ref{table:3}に示す。ここでのヤング率Eは、歪みが0〜10\%の範囲での勾配を用いている。
+
+\begin{table}[htbp]
+    \caption{ヤング率E, 破断伸び$\varepsilon_b$, 引張強度$\sigma_{max}$の値}
+    \label{table:3}
+    \centering
+    \begin{tabular}{|c|c|c|c|} \hline
+        & E (MPa) & $\varepsilon_b$ (\%) & $\sigma_{max}$ (MPa) \\ \hline
+        SIS1 & 3.41 & 4222.12 & 23.79852 \\ \hline
+        SIS3 & 3.22 & 3431.87 & 8.904542 \\ \hline
+    \end{tabular}
+\end{table}
+
+\quad 結果より、SIS1の方がSIS3よりもヤング率が高く、破断伸びが大きいことがわかる。これは、Question4でも述べたように、SIS3にはジブロック共重合体が不純物として含まれていることにより、SIS1よりも\underline{流動性や伸縮性}が低くなっているためだと考えられる。
+
+\quad ヤング率Eとゴム状平坦域弾性率$G_N$の間には、$E=2G_N(1+\gamma)\simeq3G_N$の関係が成り立つ。ここで、$\gamma$はポアソン比である。ヤング率Eとゴム状平坦域弾性率$G_N$の比較を表\ref{table:4}に示す。
+
+\begin{table}[htbp]
+    \caption{ヤング率Eとゴム状平坦域弾性率$G_N$の比較}
+    \label{table:4}
+    \centering
+    \begin{tabular}{|c|c|c|} \hline
+        & E (MPa) & $3G_N$ (MPa) \\ \hline
+        SIS1 & 3.41 & 3.3 \\ \hline
+        SIS3 & 3.22 & 1.683 \\ \hline
+    \end{tabular}
+\end{table}
+
+\quad 結果より、SIS1では$E\simeq3G_N$の関係がある程度成り立っているが、SIS3では成立していないことがわかる。これは、SIS3ではゴム状平坦領域となる温度の範囲が広く、$G_N$の値が小さく出てしまったことが考えられる。また。ヤング率Eは歪みが0〜10\%の範囲での勾配を用いており、ここでも誤差が生じていると考えられる。
+
+\section{Question 6}
+
+\quad 結果から、SIS1のようにうまくトリブロック重合体を合成することができれば、流動性、伸縮性に優れたものが得られると考えられる。しかし、SIS1ではゴム状平坦領域が低温側に偏っているため、高温側にもゴム状平坦領域を持つようなトリブロック重合体を合成することができれば、より良いものが得られると考えられる。
+
+\quad スチレン－イソブチレン－スチレンブロック共重合体(SIBS)では、完全飽和型のポリイソブチレンを用いることで、高い耐熱老化性を有している。\cite{1} SISでは不飽和結合を有するイソプレンを用いているため、耐熱老化性が低いと考えられる。そのため、イソプレンをイソブチレンなどの完全飽和型のものに置き換えることで、耐熱老化性を向上させることができると考えられる。
+
+\quad 伸長解放後、元の状態にどこまで戻るかの指標である永久伸びに関しては本実験では測定していないが、低分子量ポリイソプレンを導入したSISでは永久伸びが非常に優れていることが報告されている\cite{2}ため、低分子量ポリイソプレンを導入することでより高性能な熱可塑性エラストマーが得られると考えられる。
+
+\begin{thebibliography}{99}
+    \bibitem{1} イソブチレン系熱可塑性エラストマーの基本特性と応用事例, 中林裕晴, \url{https://www.jstage.jst.go.jp/article/gomu/83/9/83_9_284/_pdf}
+    \bibitem{2} 新機能を有するSISブロックコポリマー, 大石剛史, 池田新也, \url{https://www.jstage.jst.go.jp/article/gomu1944/79/9/79_9_443/_pdf}
+\end{thebibliography}
+
+\end{document} 
