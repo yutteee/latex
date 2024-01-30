@@ -1,0 +1,177 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+\flushleft{
+    \huge{令和5年度 化学生命工学実験4}
+    
+    \vspace{100pt}
+    
+    \huge{発光性ポリ(p-フェニレンビニレン)‒アミロース複合体の合成}
+}
+
+\vfill
+\begin{flushright}
+
+        \Large{\underline{学籍番号 : 082110424}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{氏名 : 中村優作}}
+
+        \vspace{30pt}
+    
+        \Large{\underline{実施日 : 2023/12/26, 12/27, 2024/1/10}}
+        
+\end{flushright}
+
+\newpage
+
+\section{目的}
+
+\quad PPV(p-フェニレンビニレン)は、LEDの発光層として使用される$\pi$共役系ポリマーである。PPVは溶媒に不溶であるため2段階の合成が必要である。本実験では、PPVとアミロースの複合体を合成し、可溶性のPPVベースのポリマー複合体の発光性を調べることを目的とする。
+
+\section{操作}
+
+\subsection{生成物1の合成}
+
+\quad 生成物1の合成のフローチャートを図\ref{fig:flow1}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=9.5cm]{./chart/chart1.png}
+    \caption{生成物1合成のフローチャート}
+    \label{fig:flow1}
+\end{figure}
+
+\subsection{生成物2の合成}
+
+\quad 生成物2の合成のフローチャートを図\ref{fig:flow2}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10.5cm]{./chart/chart2.png}
+    \caption{生成物2合成のフローチャート}
+    \label{fig:flow2}
+\end{figure}
+
+\subsection{生成物3の合成}
+
+\quad 生成物3の合成のフローチャートを図\ref{fig:flow3}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{./chart/chart3.png}
+    \caption{生成物3合成のフローチャート}
+    \label{fig:flow3}
+\end{figure}
+
+\subsection{PL測定}
+
+\quad PL測定のフローチャートを図\ref{fig:flow4}に示す。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=13cm]{./chart/chart4.png}
+    \caption{PL測定のフローチャート}
+    \label{fig:flow4}
+\end{figure}
+
+\section{結果}
+
+\quad 生成物1, 2の吸収・蛍光・励起スペクトルの測定結果をそれぞれ図\ref{fig:uv}, \ref{fig:fl}, \ref{fig:ex}に示す。
+
+% 3つの図を横に並べる
+\begin{figure}[htbp]
+    \begin{minipage}{0.33\hsize}
+        \centering
+        \includegraphics[width=5.3cm]{./data/uv.png}
+        \caption{生成物1,2の吸収スペクトル}
+        \label{fig:uv}
+    \end{minipage}
+    \begin{minipage}{0.33\hsize}
+        \centering
+        \includegraphics[width=5.3cm]{./data/fl.png}
+        \caption{生成物1,2の蛍光スペクトル}
+        \label{fig:fl}
+    \end{minipage}
+    \begin{minipage}{0.33\hsize}
+        \centering
+        \includegraphics[width=5.3cm]{./data/ex.png}
+        \caption{生成物1,2の励起スペクトル}
+        \label{fig:ex}
+    \end{minipage}
+\end{figure}
+
+\quad また、フィルム上の生成物1, 2の蛍光・励起スペクトルの測定結果をそれぞれ図\ref{fig:film1}, \ref{fig:film2}に示す。
+
+\begin{figure}[htbp]
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=5.3cm]{./data/film1.png}
+        \caption{フィルム上の生成物1の蛍光・励起スペクトル}
+        \label{fig:film1}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \centering
+        \includegraphics[width=5.3cm]{./data/film2.png}
+        \caption{フィルム上の生成物2の蛍光・励起スペクトル}
+        \label{fig:film2}
+    \end{minipage}
+\end{figure}
+
+
+
+\section{考察}
+
+\subsection{フィルム状態と溶液状態での蛍光スペクトルの違い}
+
+\quad フィルム状態と溶液状態での蛍光スペクトルを比較すると、フィルム状態で測定した場合の方がピークがブロードになっていることが読み取れる。これはDMSOは極性溶媒であり、溶液状態では励起状態で安定化されるためだと考えられる。通常の遷移では励起状態は基底状態よりも分極しており、溶媒の極性が高ければ、励起状態は双極子-双極子相互作用によって、基底状態よりも安定化の度合いが大きくなる。この安定化によって、フィルム状態では溶媒状態に比べてピークがブロードになっていると考えられる。
+
+\subsection{反応温度と時間の違いによる各種スペクトルの違い}
+
+\quad 生成物2は、生成物1とは異なり、室温で一晩反応を行った。この違いによって、生成物1、2は以下の図\ref{fig:reaction}に示したようになると考えられる。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=15cm]{./data/reaction.png}
+    \caption{生成物1,2の構造}
+    \label{fig:reaction}
+\end{figure}
+
+\subsubsection{吸収スペクトルでの違い}
+
+\quad 図\ref{fig:reaction}で示した構造から、生成物2ではアルケンが生成されることにより共役が伸び、長波長シフトすると考えられる。共役が伸びることで、$\pi$骨格全体に電子が非局在化し、共鳴混成構造として表される。このため、HOMOとLUMO間のエネルギー差は孤立した二重結合の場合よりも小さくなるため、長波長側で吸収を起こすと考えられる。
+
+\quad 図\ref{fig:uv}より、生成物1, 2の吸収スペクトルは大きく異なっていることがわかる。生成物1では、$320\mathrm{nm}$付近と$400\mathrm{nm}$付近にピークが見られ、生成物2では、$300\mathrm{nm}$付近と$430\mathrm{nm}$付近にピークが見られた。生成物2での$300\mathrm{nm}$付近でのピークは溶媒や不純物によるピークであると考えられる。$300\mathrm{nm}$付近での不純物のピークとしてはガラスが考えられる。生成物2のピークが$430\mathrm{nm}$付近にシフトしていることから、生成物2では共役が伸びていることが言える。
+
+\subsubsection{蛍光スペクトルでの違い}
+
+\quad 図\ref{fig:fl}より、生成物2の蛍光スペクトルは、生成物1の蛍光スペクトルに比べて長波長側にシフトしている。図\ref{fig:ex}より、励起スペクトルは、生成物1, 2ともに$400\mathrm{nm}$付近にピークが見られるため、生成物2は生成物1に比べてストークスシフトが大きくなっていると言える。これは、生成物1では共役が芳香族環のみであるのに対し、生成物2ではアルケンが共役に加わったことによるものと考えられる。芳香族炭化水素のように骨格の剛性が高い場合はストークスシフトが小さい。逆に励起状態で構造が大きく変化する場合はストークスシフトが大きい。\cite{2}生成物2では、アルケンが共役に加わったことにより、励起状態で構造が生成物1と比べて大きく変化するため、ストークスシフトが大きくなっていると考えられる。
+
+\subsubsection{励起スペクトルでの違い}
+
+\quad 図\ref{fig:ex}より、生成物1,2の励起スペクトルのピークは$400\mathrm{nm}$付近でほぼ同じであったが、生成物2のピークの強度が生成物1に比べて大きくなっていることが読み取れる。このことから、生成物2の方が強い蛍光を示すということが言える。これはフローチャートで示したUV照射による蛍光強度の結果からも読み取ることができる。
+
+\subsection{Corn starchがない場合の実験との比較}
+
+\quad コーンスターチがない場合、つまりアミロースと複合体を形成せずに合成を行った場合、生成物を得ることができなかった。これは、ポリマーの成長において、アミロースがテンプレートとして働いているためだと考えられる。アミロースは螺旋構造を持っており、この螺旋構造の中は疎水的となっているためモノマーが入りやすい。また、アミロースは直線上になっているため、重合が進みやすい。このため、アミロースがテンプレートとして働くことで、生成物が得られると考えられる。
+% アミロースの螺旋構造の中が疏水的。モノマーが中に入りやすい。直線上になっているので十号が進みやすい。
+
+\begin{thebibliography}{99}
+    \bibitem{1} 有機化合物のスペクトル解析入門, T.M.ハーウッド, T.D.W.クラリッジ
+    \bibitem{2} 蛍光分光法, 大谷弘之, \url{https://www.jstage.jst.go.jp/article/kogyobutsurikagaku/59/1/59_22/_pdf/-char/ja}
+\end{thebibliography}
+
+\end{document} 
