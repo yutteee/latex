@@ -1,0 +1,80 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+
+\section{結果}
+
+\quad 表\ref{table:1}にセルカウントの結果を、表\ref{table:2}にセルカウントの結果から算出した懸濁液内の細胞数の結果を示す。また、図\ref{fig:1}に培養時間と細胞数の関係を示す。
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{セルカウントの結果}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+         & day1 (cells) & day2 (cells) & day3 (cells) \\
+        \hline
+        dish 1 & 16 & 19 & 63 \\
+        dish 2 & 2 & 33 & 93 \\
+        dish 3 & 10 & 22 & 83 \\
+        \hline
+        平均 & 9.33 & 24.7 & 79.7 \\
+        \hline
+    \end{tabular}
+    \label{table:1}
+\end{table}
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{懸濁液内の細胞数の結果}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+         & day1 (cells) & day2 (cells) & day3 (cells) \\
+        \hline
+        dish 1 & 80000 & 95000 & 315000 \\
+        dish 2 & 10000 & 165000 & 465000 \\
+        dish 3 & 50000 & 110000 & 415000 \\
+        \hline
+        平均 & 46667 & 123333 & 398333 \\
+        \hline
+    \end{tabular}
+    \label{table:2}
+\end{table}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./figure.png}
+    \caption{培養時間と細胞数の関係}
+    \label{fig:1}
+\end{figure}
+
+
+\newpage
+
+\section{考察}
+
+% day1でdish2を吸いすぎた？
+% トリプシンを加えたけど剥がれていないものが多く見られた -> 想定より少なくなった？
+% 想定はどのくらいか？ -> 
+
+\quad 図\ref{fig:1}から、細胞数がday1からday3の間で指数対数的に増加していることが読み取れる。したがって、培養開始から1〜3日目の間はC2C12細胞の対数増殖期に当たることが言える。定常期や死滅期を確認するためには、培養開始から数日以上経過した後の細胞数を測定する必要がある。
+
+\quad 表\ref{table:1}から、セルカウントの結果はdishごとにばらつきがあることが読み取れる。特に、day1とday2ではカウントされた細胞数が少なく、相対的なばらつきが大きくなっている。これは懸濁の際に加えたDMTMが多く、懸濁液の濃度が低くなったことによるものだと考えられる。誤差をさらに小さくするために、適切なDMTMの量を加えることが重要だと言える。また、day1のdish2ではセルカウントの結果が特に少なくなっている。これは上澄を除去する際に細胞も一部除去されたためだと考えられる。したがって、上澄を除去する際には細胞も一部除去されないように注意する必要がある。
+
+
+\end{document} 
