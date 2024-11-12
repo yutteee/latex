@@ -1,0 +1,76 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+
+\begin{flushleft}
+    \huge{3残基ペプチドの合成(4回目)}
+\end{flushleft}
+
+\section{自動合成}
+
+$15.603\mathrm{µmol}$スケールで、WFG, WFA, GFW, FWG, AFW, LFP, IFP, FPP, MFP, PFPの10配列を自動合成する。
+
+
+\section{脱保護}
+
+\begin{enumerate}[1.]
+    \item シリンジに、カラムを反対向きで口に当て、シールごと樹脂をシリンジに移す。
+    \begin{description}
+        \item[補足] 続けて操作しない場合は、$-20\mathrm{^{\circ}C}$で保存する。 
+    \end{description}
+    \item エタノールを吸って10秒震盪し、溶媒を押し出すのを5回繰り返す。
+    \item カラムを真空システムに入れ、一晩乾燥させる。
+    \item 脱保護試薬を表\ref*{table:1}の組成で作成する。
+    \item シリンジにテフロンニードルを設置
+    \item 遠沈管からカクテルを脱保護試薬を2mL程度まで吸う。
+    \item テフロンニードルの先を遠沈管に差したまま、シリンジから空気を抜く。
+    \item 3時間ドラフトシェーカーに放置する。
+\end{enumerate}
+
+\renewcommand{\tablename}{表}
+\begin{table}[hbtp]
+    \captionsetup[table]{skip=5pt}
+    \centering
+    \caption{脱保護試薬の組成}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        試薬 & 割合 (\%) & 実際量 (mL) \\
+        \hline
+        TFA & 95 & 28.5 \\
+        水 & 2.5 & 0.75 \\
+        TIS & 2.5 & 0.75 \\
+        \hline
+    \end{tabular}
+    \label{table:1}
+\end{table}
+
+\section{ペプチド沈殿}
+
+\begin{enumerate}[1.]
+    \item 脱保護試薬が入っていた$50\mathrm{mL}$遠沈管に、シリンジからペプチド溶液を出す。
+    \item 遠沈管に20\%ヘプタン-TBME溶液で$10\mathrm{mL}$までメスアップする。
+    \item ボルテックス、上下撹拌で混合する。
+    \item $-20\mathrm{^{\circ}C}$で一晩放置する。
+    \item 沈殿が得られなかったら、7-15滴の水を添加し、ボルテックスして$4\mathrm{^{\circ}C}$で数時間放置する。
+    \item 沈殿が得られたら、$0\mathrm{^{\circ}C}$, $3000\mathrm{g}$で10分間遠心する。
+    \item 上清を捨て、20\%ヘプタン-TBME溶液を$10\mathrm{mL}$加え、蓋をして混合し、$-20\mathrm{^{\circ}C}$で1時間置く。
+    \item 再度遠心して沈殿物を集め、上澄は捨てる。
+    \item 蓋を開けて放置して溶媒を飛ばしてから、30\%アセトニトリル-水溶液を$500\mathrm{µL}$〜$2500\mathrm{µL}$で溶解する。($500\mathrm{µL}$から始めて溶けるまで加えていく。)
+    \item $-78\mathrm{^{\circ}C}$以下で氷結させる。
+\end{enumerate}
+
+\section{凍結乾燥}
+
+\end{document}

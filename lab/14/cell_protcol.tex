@@ -1,0 +1,251 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+
+\begin{flushleft}
+    \huge{下位ペプチドのTGR5活性評価}
+\end{flushleft}
+
+\section{起眠}
+
+\begin{enumerate}[1.]
+    \item 凍結バイアルを保管容器から取り出し、$37\mathrm{C^{\circ}}$の恒温槽で溶解する。
+    \begin{description}
+        \item[注意] 液体窒素から出してすぐ蓋を少し開け、シュッとなったらすぐ閉める。
+        \item[注意] 完全解凍してはいけない。米粒くらい残っている状態で高温層から出し、あとは常温解凍。 
+    \end{description}
+    \item GM$5\mathrm{mL}$を入れた$15\mathrm{mL}$遠沈管にバイアルの中身を移す。
+    \item $1000\mathrm{rpm}$で$4$分遠心し、上清を除去する。
+    \item ペレット($1.0 \times 10^5\mathrm{cells}$)を$1\mathrm{mL}$のGMで懸濁する。
+    \item GM $4\mathrm{mL}$を入れた$60\mathrm{mm}$dishに$1\mathrm{mL}$を播種する。
+    \begin{description}
+        \item[注意] 播きムラができないように、傾けて十分ピペッティングをしてから水平にする。
+        \item[注意] その後、縦横にdishを振る。
+    \end{description}
+    \item $37\mathrm{^{\circ}C}$,$5\%$$\ce{CO2}$インキュベーターで培養を開始する。
+\end{enumerate}
+
+\section{継代}
+
+\begin{enumerate}[1.]
+    \item 2日間培養後、壁面からGMを除去する。
+    \item 壁面からPBS$3\mathrm{mL}$で2度洗浄する。
+    \item 0.05\%トリプシン/EDTA$0.5\mathrm{mL}$を加える。
+    \item $37\mathrm{^{\circ}C}$,$5\%$$\ce{CO2}$インキュベーターで$1$分静置する。
+    \item GM$3\mathrm{mL}$を加え、dishを傾けながら細胞が剥がれるように2度洗い流す。
+    \item $15\mathrm{mL}$遠沈管に全てを回収する。
+    \item $1000\mathrm{rpm}$で$4$分遠心し、上清を除去する。
+    \item 新しいGM$2\mathrm{mL}$を加え、ペレットを懸濁する。
+    \item トリパンブルー色素排除染色法により、セルカウントを行う。
+    \item $100\mathrm{mm dish}$に、$8.0 \times 10^5 \mathrm{cells/dish}$になるように撒く。
+    \item $37\mathrm{^{\circ}C}$,$5\%$$\ce{CO2}$インキュベーターで培養を開始する。
+\end{enumerate}
+
+\section{継代}
+
+\begin{enumerate}[1.]
+    \item 3日間培養後、壁面からGMを除去する。
+    \item 壁面からPBS$5\mathrm{mL}$で2度洗浄する。
+    \item 0.05\%トリプシン/EDTA$1\mathrm{mL}$を加える。
+    \item $37\mathrm{^{\circ}C}$,$5\%$$\ce{CO2}$インキュベーターで$1$分静置する。
+    \item GM$5\mathrm{mL}$を加え、dishを傾けながら細胞が剥がれるように2度洗い流す。
+    \item $15\mathrm{mL}$遠沈管に全てを回収する。
+    \item $1000\mathrm{rpm}$で$5$分遠心し、上清を除去する。
+    \item 新しいGM$5\mathrm{mL}$を加え、ペレットを懸濁する。
+    \item トリパンブルー色素排除染色法により、セルカウントを行う。
+    \item $60\mathrm{mm dish}$に、$1.2 \times 10^6 \mathrm{cells/dish}$になるように撒く。
+    \item $37\mathrm{^{\circ}C}$,$5\%$$\ce{CO2}$インキュベーターで培養を開始する。
+\end{enumerate}
+
+\section{トランスフェクション}
+
+\subsection{1日目}
+
+\begin{enumerate}[1.]
+    % ((550 + 500) × 5 + 5000) × 5 = 51250
+    \item Opti-MEMを$51.25\mathrm{mL}$分注する。
+    \item エッペンに、表\ref*{tab:transfection}の溶液1を調整し、5分間静置する。
+
+    \renewcommand{\tablename}{表}
+    \begin{table}[hbtp]
+        \captionsetup[table]{skip=5pt}
+        \centering
+        \caption{トランスフェクション用の溶液調整(5dish分)}
+        \begin{tabular}{|l|c|c|}
+            \hline
+            試薬名 & 溶液1 & 溶液2 \\
+            \hline
+            Opti-MEM & $500\mathrm{\mu M} + 50\mathrm{\mu  L} \times 5 = 2750\mathrm{\mu L} $ & $500\mathrm{\mu M} \times 5 = 2500\mathrm{\mu L}$ \\
+            各プラスミド溶液(hTGR5, CRE-luc, \beta-gal) & - & $2.5\mathrm{\mu L} \times 5 = 12.5\mathrm{\mu L}$ \\
+            Lipofectamine 3000 Reagent & $7.5\mathrm{\mu L} + 0.75\mathrm{µL} \times 5 = 41.25\mathrm{\mu L}$& - \\
+            P3000 Reagent & - & $15\mathrm{\mu L} \times 5 = 75\mathrm{\mu L}$ \\
+            \hline
+        \end{tabular}
+        \label{tab:transfection}
+    \end{table}
+
+    \item 5分間静置している間、溶液2をエッペンに調整
+    \item 5分後に溶液1を溶液2に1:1で添加し、優しくピペッティングして室温で20分間静置する。
+    \begin{description}
+        \item[注意] ここからのピペッティングは優しく行う。 
+    \end{description}
+    \item 20分後、溶液1, 2混合溶液をOpti-MEM($37\mathrm{^{\circ}C}$)で5倍量に希釈することで、DNA-Lipofectamine複合液とする。
+    \item 成長培地を除去し、Opti-MEM($37\mathrm{^{\circ}C}$)$5\mathrm{mL}$を細胞が剥がれないように壁面に沿って穏やかに添加する。
+    \item Opti-MEMを除去し、DNA-Lipofectamine複合液を$5\mathrm{mL}$を60mm dishの壁面に沿って穏やかに添加する。
+    \item $37\mathrm{^{\circ}C}, 5\%,  \ce{CO2}$インキュベーターで24時間インキュベートする。
+\end{enumerate}
+
+\subsection{2日目}
+
+\begin{enumerate}[1.]
+    \item 成長培地に交換し、$37\mathrm{^{\circ}C}, 5\%,  \ce{CO2}$インキュベーターで4時間インキュベートする。
+    \begin{description}
+        \item[注意] 培地を除去するときには優しくピペットマンで行うこと。
+    \end{description}
+    \item 壁面からGMを除去する。
+    \item 壁面からPBS$3\mathrm{mL}$で2度洗浄する。
+    \item $0.05\%$トリプシン/EDTA$0.5\mathrm{mL}$を加える。
+    \item $37\mathrm{^{\circ}C}$,$5\%$$\ce{CO2}$インキュベーターで$1$分静置する。
+    \item GM$3\mathrm{mL}$を加え、dishを傾けながら細胞が剥がれるように2度洗い流す。
+    \item $15\mathrm{mL}$遠沈管に全てを回収する。
+    \item $1000\mathrm{rpm}$で$4$分遠心し、上清を除去する。
+    \item 新しいGM$2\mathrm{mL}$を加え、ペレットを懸濁する。
+    \item トリパンブルー色素排除染色法により、セルカウントを行う。
+    \item 24well plateに、$3.0 \times 10^5 \mathrm{cells/well}$になるように撒く。
+\end{enumerate}
+
+\section{DCA, ペプチド添加}
+
+% 新しく分注が必要な場合は、以下のように記述する。
+% \subsection{DCAの分注}
+
+% \begin{enumerate}[1.]
+%     \item $50\mathrm{mL}$遠沈管に$1.0〜1.9\mathrm{mg}$でDCAを計り取る。
+%     \item GMを加え、$0.1\mathrm{mM}$のDCA溶液を作成する。
+%     \item $15\mathrm{mL}$遠沈管に$0.1\mathrm{mM}$DCA溶液$0.25\mathrm{mL}$, GM$6.25\mathrm{mL}$を加え、$4\mathrm{mM}$DCA溶液とする。
+%     \item $15\mathrm{mL}$遠沈管に$1\mathrm{mM}$で分注してあるDCA溶液$4\mathrm{\mu L}$, GM$1996\mathrm{\mu L}$を加え、$2\mathrm{mM}$DCA溶液とする。
+% \end{enumerate}
+
+% \subsection{ペプチドの分注}
+
+% ペプチドアレイで合成したペプチドをHBSSで溶出した。濃度は200µM。
+\begin{enumerate}[1.]
+    \item 表\ref{tab:DCA-peptide}のように、溶液を調整する。
+    
+    \renewcommand{\tablename}{表}
+    \begin{table}[hbtp]
+        \captionsetup[table]{skip=5pt}
+        \centering
+        \caption{トランスフェクション用の溶液調整(4dish分)}
+        \begin{tabular}{|l|c|c|c|}
+            \hline
+            & $4\mathrm{\mu L}$ DCA & ペプチド溶出液 & GM \\
+            \hline
+            control & - & - & $500\mathrm{\mu L}$ \\
+            DCA only & $250\mathrm{\mu L}$ & - & $250\mathrm{\mu L}$\\
+            ペプチド添加 & - & $50\mathrm{\mu L}$ & $500\mathrm{\mu L}$ \\
+            \hline
+        \end{tabular}
+        \label{tab:DCA-peptide}
+    \end{table}
+
+    \item 成長培地を除去し、表\ref{tab:plate1}, \ref{tab:plate2}に従って、サンプル入り培地を24well plateの壁面に沿って穏やかに添加する。
+    
+    \renewcommand{\tablename}{表}
+    \begin{table}[hbtp]
+        \captionsetup[table]{skip=5pt}
+        \centering
+        \caption{24well plateへのサンプル入り培地の添加}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            control & DCA only & FRT & TRT & FDT & FNT \\
+            \hline
+            control & DCA only & FRT & TRT & FDT & FNT \\
+            \hline
+            control & DCA only & FRT & TRT & FDT & FNT \\
+            \hline
+            & & & & & \\
+            \hline
+        \end{tabular}
+        \label{tab:plate1}
+    \end{table}
+    
+    \renewcommand{\tablename}{表}
+    \begin{table}[hbtp]
+        \captionsetup[table]{skip=5pt}
+        \centering
+        \caption{24well plateへのサンプル入り培地の添加}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            FQT & PET & PHT & FST & FET & PFT \\
+            \hline
+            FQT & PET & PHT & FST & FET & PFT \\
+            \hline
+            FQT & PET & PHT & FST & FET & PFT \\
+            \hline
+            & & & & & \\
+            \hline
+        \end{tabular}
+        \label{tab:plate2}
+    \end{table}
+
+    \item $37\mathrm{^{\circ}C}, 5\%,  \ce{CO2}$インキュベーターで2時間インキュベートする。
+    \item  $5 \times$Lysis bufferを純粋で希釈して、$1 \times$Lysis bufferに調整する。
+    \item PBS$250\mathrm{\mu L}$で2回washする。
+    \item $1 \times$Lysis bufferを$100\mathrm{\mu L/well}$で添加する。
+    \begin{description}
+        \item[注意] \beta-galアッセイで使用するので捨てないこと。 
+    \end{description}
+    \item 遠心機を$4\mathrm{^{\circ}C}$に冷やす。
+    \item 620の振盪機で15分間振盪する。
+    \item 各ウェルの溶液を氷上の$1.5\mathrm{mL}$マイクロチューブに回収する。
+    \item 氷冷して超音波洗浄機で5分間超音波をかけることで、細胞を完全に破砕する。
+    \item 10秒間ボルテックスし、$4\mathrm{^{\circ}C} 13000\mathrm{g}$で10分間遠心分離する。
+    \item ここで得られた上清を別の$1.5\mathrm{mL}$マイクロチューブに$50\mathrm{\mu L}$ずつ回収する。
+\end{enumerate}
+
+\section{アッセイ}
+
+\subsection{ホタルルシフェラーゼアッセイ}
+
+\begin{enumerate}[1.]
+    \item アシストチューブ内でLusiferase Assay Reagent$50\mathrm{\mu L}$とcell lysate$10\mathrm{\mu L}$を混合する。
+    \begin{description}
+        \item[注意] 予め冷蔵庫で溶かしておくと良い。 
+    \end{description}
+    \item 5秒間ボルテックスする。
+    \item シングルチューブルミノメーターで発光測定する。
+\end{enumerate}
+
+\subsection{\beta-galアッセイ}
+
+\begin{enumerate}[1.]
+    \item 1M \ce{MgCl2} $20\mathrm{\mu L}$, 2-メルカプトエタノール$63\mathrm{\mu L}$, 純水$117\mathrm{\mu L}$を混合することにより$100 \times \ce{Mg}$ Sol.を作成する。
+    \item 0.1Mリン酸ナトリウムバッファー：$1 \times $OPNG : $100 \times \ce{Mg}$ Sol. = 67 : 22 : 1の割合で混合することで、\beta gal Substrate Reagentを調整する。
+    \item 氷冷した96wellプレート上で、cell lysate $10\mathrm{\mu} L$と\beta gal Substrate Reagent $90\mathrm{\mu L}$を混合し、$37\mathrm{^{\circ}C}$で2時間インキュベートする。
+    \begin{description}
+        \item[注意] ブランクとして、cell lysateの代わりに$1 \times $ lysis buffer$10\mathrm{\mu L}$を混合したものも用意する。 
+    \end{description}
+    \item 2時間後、吸光プレートリーダーepoch2を用いて$415\mathrm{nm}$での吸光波長を測定する。
+    \item 式\ref{eq:beta-gal}を用いて、Luc activityを算出する。
+    
+    \begin{equation}
+        \label{eq:beta-gal}
+        \text{Luc activity(/\beta-gal)} = \frac{\text{Luc activity}}{\text{\beta-gal activity}}
+    \end{equation}
+\end{enumerate}
+
+
+\end{document} 

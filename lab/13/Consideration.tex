@@ -1,0 +1,48 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumerate}
+\usepackage[version=4]{mhchem}
+\usepackage{caption}
+\usepackage{url}
+\usepackage{comment}
+
+
+\title{実験レポテンプレ}
+\author{中村 優作}
+\date{April 2023}
+
+\pagestyle{plain}
+\begin{document}
+
+
+\section{結果}
+
+図\ref*{fig:result}に、各ペプチドのTGR5活性評価の結果を示す。いくつかのペプチドは,TGR5に対する小さい活性を示していることがわかる。最も強い活性を示したのはPPCで、DCAのおよそ25\%程度の活性を示した。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{result.png}
+    \caption{各ペプチドのTGR5活性評価の結果}
+    \label{fig:result}
+\end{figure}
+
+\section{考察}
+
+\begin{comment}
+- 上位が全部そんなに示さなかった
+- 1位が全然ダメ
+- モデルはPPという構造をTGR5活性に対して重要視しているが、この結果から重要でないことがわかる
+- 活性が出てるものと出ていないものの違いを考えてみる
+- 生物物理学的特性を見てみること
+- 過去のペプチドと比較すること
+- the isoelectric point in neutral pH, (2) GRAVY (grand average of hydropathy)46, (3) the instability index47, (4) aromaticity, (5) the molar extinction coefficient and (6) molecular weight.
+- 今回DCAの誤差が大きいので単純な比較をしていいのか微妙だが、清水さんのDCA結合ペプチドの結果では30%程度のものはあった。
+- PPが重要な構造であるという仮説がおそらく間違っており、なんでPPが重要な構造とモデルは示したのかを考える必要がある。
+- 重要な寄与を示すパラメータを抽出して、それらが上位に含まれるかどうかを確認してみること。
+\end{comment}
+
+
+
+\end{document} 
